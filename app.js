@@ -1,1 +1,1 @@
-
+'user strict';
