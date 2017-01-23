@@ -26,3 +26,22 @@ body {
 h1, h3 {
   font-family: "michroma";
 }
+
+div {
+  float: left;
+  font-family: 'Libre Baskerville', serif;
+}
+
+#left {
+  padding-right: 50px;
+  width: 250px;
+}
+
+#center {
+  padding-right: 50px;
+  width 250px;
+}
+
+#right {
+  width: 250px;
+}
