@@ -1,3 +1,13 @@
+#homepage {
+  background-image: url(img/homepage-background1.jpg);
+  background-size: 100% auto;
+}
+
+#large-logo {
+  margin-left: 30%;
+  margin-right: auto;
+}
+
 header {
   position: relative;
   top: 0px;
@@ -22,8 +32,19 @@ footer {
 body {
   font-family: "abel";
   background-color: lightgrey;
+  color: white;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-h1, h3 {
+h1, h3{
   font-family: "michroma";
+  padding: 0 0 0 0;
+  text-align: center;
+}
+
+p{
+  width: 400px;
+  margin-left: 36%;
+  text-align: center;
 }
