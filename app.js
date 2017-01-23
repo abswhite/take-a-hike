@@ -3,11 +3,12 @@
 var questionObjects = []; // this will hold our question objects
 
 var mainEl = document.getElementById('question-section');
-var divLeftEl, divCenterEl, divRightEl, imgLeftEl, imgCenterEl, imgRightEl, pLeftEl, pCenterEl, pRightEl;
+var divLeftEl, divCenterEl, divRightEl, imgLeftEl, imgCenterEl, imgRightEl, pLeftEl, pCenterEl, pRightEl, h2El;
 var clickCounter = 0;
 var easyHikeCounter = 0;
 var mediumHikeCounter = 0;
 var hardHikeCounter = 0;
+var counters = [];
 
 var questions = ['What level of difficulty are you looking for in a hike?', 'How do you feel about dogs and kids?', 'How much elevation gain are you willing to climb?', 'Which region do you prefer?', 'Which hiking movie did you like best?', 'If you HAD to choose, how would you rather die?', 'Do you require a spectacular view?', 'Are you looking for a hike with a lake, river, or waterfall?', 'Would you have cut off your arm? (ie; 127 hours, Aron Ralston)', ' Are you opposed to paying for parking?'];
 
@@ -28,10 +29,13 @@ function createImages() {
 }
 
 function displayQuestion(questionIndex) {
+  h2El = document.createElement('h2');
+  h2El.textContent = questions[questionIndex];
   divLeftEl = document.createElement('div');
   divLeftEl.setAttribute('id', 'left');
   imgLeftEl = document.createElement('img');
   imgLeftEl.setAttribute('src', filePathResponses[questionIndex][0]);
+  imgLeftEl.setAttribute('id', 'left');
   imgLeftEl.setAttribute('width', '250');
   imgLeftEl.setAttribute('height', '250');
   pLeftEl = document.createElement('p');
@@ -42,6 +46,7 @@ function displayQuestion(questionIndex) {
   divCenterEl.setAttribute('id', 'center');
   imgCenterEl = document.createElement('img');
   imgCenterEl.setAttribute('src', filePathResponses[questionIndex][1]);
+  imgCenterEl.setAttribute('id', 'center');
   imgCenterEl.setAttribute('width', '250');
   imgCenterEl.setAttribute('height', '250');
   pCenterEl = document.createElement('p');
@@ -52,12 +57,14 @@ function displayQuestion(questionIndex) {
   divRightEl.setAttribute('id', 'right');
   imgRightEl = document.createElement('img');
   imgRightEl.setAttribute('src', filePathResponses[questionIndex][2]);
+  imgRightEl.setAttribute('id', 'right');
   imgRightEl.setAttribute('width', '250');
   imgRightEl.setAttribute('height', '250');
   pRightEl = document.createElement('p');
   pRightEl.setAttribute('id', 'right');
   pRightEl.textContent = textResponses[questionIndex][2];
 
+  mainEl.appendChild(h2El);
   divLeftEl.appendChild(imgLeftEl);
   divLeftEl.appendChild(pLeftEl);
   divCenterEl.appendChild(imgCenterEl);
@@ -71,6 +78,7 @@ function displayQuestion(questionIndex) {
 }
 
 function removeQuestion() {
+  mainEl.removeChild(h2El);
   divLeftEl.removeChild(imgLeftEl);
   divLeftEl.removeChild(pLeftEl);
   mainEl.removeChild(divLeftEl);
@@ -82,24 +90,55 @@ function removeQuestion() {
   mainEl.removeChild(divRightEl);
 }
 
+function getResult() {
+  return counters.indexOf(Math.max(...counters));
+}
+
+
+function renderResult() {
+  var h1El = document.createElement('h1');
+  h1El.textContent = 'Thank you for playing! Your perfect hike is:';
+  var aEl = document.createElement('a');
+
+  if (getResult() === 0) {
+    aEl.setAttribute('href', 'Results-Arboretum.html')
+  } else if (getResult() === 1) {
+    aEl.setAttribute('href', 'Results-West-Tiger.html')
+  } else {
+    aEl.setAttribute('href', 'Results-Annapurna.html')
+  }
+  aEl.textContent = 'Results';
+  h1El.appendChild(aEl);
+  mainEl.appendChild(h1El);
+}
+
 function onClickResponse(event) {
   event.preventDefault();
   event.stopPropagation();
+
+  console.log(event.target.getAttribute('id'));
+  clickCounter++;
+
+  if (event.target.getAttribute('id') === 'left') {
+    easyHikeCounter++;
+  } else if (event.target.getAttribute('id') === 'center') {
+    mediumHikeCounter++;
+  } else {
+    hardHikeCounter++;
+  }
+
   if(clickCounter < 10) {
-    clickCounter++;
-    console.log(event.target.getAttribute('id'));
-    if (event.target.getAttribute('id') === 'left') {
-      easyHikeCounter++;
-    } else if (event.target.getAttribute('id') === 'center') {
-      mediumHikeCounter++;
-    } else {
-      hardHikeCounter++;
-    }
     removeQuestion();
     displayQuestion(clickCounter);
     divLeftEl.addEventListener('click', onClickResponse, false);
     divCenterEl.addEventListener('click', onClickResponse, false);
     divRightEl.addEventListener('click', onClickResponse, false);
+  } else {
+    counters.push(easyHikeCounter);
+    counters.push(mediumHikeCounter);
+    counters.push(hardHikeCounter);
+    removeQuestion();
+    renderResult();
   }
 }
 
