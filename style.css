@@ -2,7 +2,7 @@ header {
   position: relative;
   top: 0px;
   left: 0px;
-  background-color: lightgray;
+  background-color: #A9C9A4;
 }
 
 header li {
@@ -14,7 +14,15 @@ header li {
 }*/
 
 footer {
-  background-color: lightgray;
+  background-color: #A9C9A4;
   bottom: 0px;
   width: 100%;
+}
+
+body {
+  font-family: "abel";
+}
+
+h1, h3 {
+  font-family: "michroma";
 }
