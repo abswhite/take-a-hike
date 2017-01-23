@@ -1,1 +1,12 @@
 
+
+header {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background-color: lightgray;
+}
+
+header li{
+  display: inline;
+}
