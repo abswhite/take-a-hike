@@ -9,7 +9,7 @@ var questions = ['What level of difficulty are you looking for in a hike?', 'How
 
 var textResponses = [['Taking a stroll across the Shire', 'Just to Rivendell and back', 'Taking the ring to Mount Doom'], ['Omg love them!', 'Neither here-nor-there', 'Ugh, is there a difference?'], ['Not much at all', 'A fair amount', 'I want the hike to take my breath away...literally'], ['Local (Washington State)', 'About an hour away', 'Literally as far away as possible'], ['Homeward Bound', 'Wild', 'Into Thin Air'], ['Of boredom ', 'Bears!', 'Avalanche'], ['I’m all about the journey', 'Yes! Do it for the gram!', 'I want to stand on the top of the world'], ['Yes', 'No', 'I’m looking not-die, how about that'], ['LOL NOPE', 'Depends (on which arm, do I have life insurance, are there camera crews nearby, etc)', 'Already have. I am Aron Ralston.'], ['Yes, morally', 'I’m willing to pay for parking, let’s get started!', 'Literally not worried about my car, man']];
 
-var filePathResponses = [['img/Q1-left.jpg', 'img/Q1-center.jpg', 'img/Q1-right.jpg'], ['']]; // this will be a 2d array that holds 3 filepath strings per element
+var filePathResponses = [['img/Q1-left.jpg', 'img/Q1-center.jpg', 'img/Q1-right.jpg']]; // this will be a 2d array that holds 3 filepath strings per element
 
 function Question(question, textResponses, filePathResponses) {
   this.question = question;
@@ -46,7 +46,7 @@ function displayQuestion(questionIndex) {
   imgRightEl.setAttribute('src', filePathResponses[questionIndex][2]);
   pRightEl = document.createElement('p');
   pRightEl.setAttribute('id', 'right');
-  pRightEl.textContent[questionIndex][2];
+  pRightEl.textContent = textResponses[questionIndex][2];
 
   divLeftEl.appendChild(imgLeftEl);
   divLeftEl.appendChild(pLeftEl);
