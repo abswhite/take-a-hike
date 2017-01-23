@@ -38,7 +38,7 @@ function displayQuestion(questionIndex) {
   imgCenterEl.setAttribute('src', filePathResponses[questionIndex][1]);
   pCenterEl = document.createElement('p');
   pCenterEl.setAttribute('id', 'center');
-  pCenterEl.textContent = textResponses[questionIndex[1]];
+  pCenterEl.textContent = textResponses[questionIndex][1];
 
   divRightEl = document.createElement('div');
   divRightEl.setAttribute('id', 'right');
