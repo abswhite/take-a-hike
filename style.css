@@ -221,6 +221,15 @@ div {
   padding: 6px 6px 6px 6px;
 }
 
+a.results-text {
+  position: fixed;
+  margin-top: 12%;
+  margin-left: -37%;
+  color: white;
+  background-color: seagreen;
+  text-decoration: none;
+}
+
 h1.question-text, h2.question-text {
   border-radius: 8px;
 }
@@ -272,6 +281,13 @@ div#left-div.left {
   opacity: .85;
   border-radius: 8px;
   text-align: center;
+}
+
+.results-text {
+  background-color: white;
+  opacity: .9;
+  border-radius: 8px;
+  padding: 50px 50px 50px 50px;
 }
 
 #about-title {

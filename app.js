@@ -104,7 +104,7 @@ function renderResult() {
   h1El.setAttribute('class', 'question-text');
   h1El.textContent = 'Thank you for playing! Your perfect hike is: ';
   var aEl = document.createElement('a');
-  aEl.setAttribute('class', 'question-text');
+  aEl.setAttribute('class', 'results-text');
 
   if (getResult() === 0) {
     aEl.setAttribute('href', 'Results-Arboretum.html')
