@@ -1,7 +1,7 @@
-#homepage {
+/*#homepage {
   background-image: url(img/homepage-background1.jpg);
   background-size: 100% auto;
-}
+}*/
 
 #hp-description {
   background-color: white;
@@ -288,15 +288,12 @@ div {
   width: 700px;
 }
 
-<<<<<<< HEAD
-#about-background {
-=======
+
 .blockquote{
   font-size: 20px;
 }
 
-#about-html {
->>>>>>> 707d6d6b5ff050cd5f33c417ebd058a4c2fa4b64
+#about-background {
   background: url("img/mountain_cloud_background.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
