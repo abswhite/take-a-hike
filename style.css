@@ -225,6 +225,21 @@ h1.question-text, h2.question-text {
   border-radius: 8px;
 }
 
+.left:hover {
+  -webkit-transform: translateX(-4px);
+  transform: translateX(-4px);
+}
+
+.right:hover {
+  -webkit-transform: translateX(-4px);
+  transform: translateX(-4px);
+}
+
+.center:hover {
+  -webkit-transform: translateX(-4px);
+  transform: translateX(-4px);
+}
+
 .left, .center, .right {
   float: left;
   width: 250px;
