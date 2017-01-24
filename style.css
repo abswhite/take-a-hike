@@ -76,16 +76,22 @@ header li {
 #annapurna {
   width: 500px;
   margin-right: 10px;
+  border-radius: 8px;
+  border: 2px solid #C8C8C8 ;
 }
 
 #tiger-mountain {
   width: 500px;
   margin-right: 10px;
+  border-radius: 8px;
+  border: 2px solid #C8C8C8 ;
 }
 
 #arboretum {
   width: 500px;
   margin-right: 10px;
+  border-radius: 8px;
+  border: 2px solid #C8C8C8 ;
 }
 
 #arboretum-equipment {
@@ -128,7 +134,11 @@ footer a {
 
 body {
   font-family: "abel";
-  background-color: lightgrey;
+  background-color: darkgrey;
+  background-image: url(img-background/results-background.jpg);
+  background-attachment: fixed;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 main {
@@ -160,4 +170,65 @@ div {
   border: 2px solid black;
   float: left;
   width: 250px;
+}
+
+.title {
+  padding: 6px 6px 10px 10px;
+  margin-right: auto;
+  background-color: white;
+  opacity: .85;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#arboretum-title {
+  margin-left: 23%;
+  width: 600px;
+}
+
+#west-tiger-title {
+  width: 320px;
+  margin-left: 33%;
+}
+
+#annapurna-title {
+  width: 550px;
+  margin-left: 30%;
+}
+
+.title-description {
+  padding: 6px 6px 10px 10px;
+  margin-right: auto;
+  margin-left: 16%;
+  background-color: white;
+  opacity: .65;
+  width: 750px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.quick-facts {
+  padding: 3px 6px 10px 10px;
+  margin-right: auto;
+  margin-left: 10px;
+  background-color: white;
+  opacity: .65;
+  width: 550px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.quickfacts h3 {
+  text-align: center;
+}
+
+.quote {
+  padding: 0px 6px 10px 10px;
+  float: clear;
+  background-color: white;
+  opacity: .65;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 700px;
 }
