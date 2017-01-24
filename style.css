@@ -23,7 +23,7 @@
 
 #small-logo {
   float: left;
-  margin-left: 5px;
+  margin-left: 10px;
   margin-top: 5px;
 }
 #nav {
@@ -35,13 +35,13 @@
 
 nav a:hover {
   color: white;
-  background: #4F4F4F;
+  background: #2E2E2E	;
 }
 
 .nav-links {
   margin-right: 20px;
   text-decoration: none;
-  color: #383838;
+  color: #2E2E2E;
   background-color: white;
   padding-top: 4px;
   padding-bottom: 4px;
