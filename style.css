@@ -1,8 +1,3 @@
-/*#homepage {
-  background-image: url(img/homepage-background1.jpg);
-  background-size: 100% auto;
-}*/
-
 #hp-description {
   background-color: white;
   opacity: .70;
@@ -61,17 +56,11 @@ header {
   position: relative;
   top: 0px;
   left: 0px;
-  /*background-color: #A9C9A4;*/
 }
 
 header li {
   display: inline;
 }
-
-
-/*#left, #middle, #right {
-  float: left;
-}*/
 
 #annapurna {
   width: 500px;
@@ -113,7 +102,6 @@ header li {
   list-style-type: none;
 }
 
-
 .grow:hover {
   -webkit-transform: scale(1.3);
   -ms-transform: scale(1.3);
@@ -127,16 +115,16 @@ header li {
   transition:all 0.3s ease;
 }
 
-
 footer {
- /*background-color: #A9C9A4 ;*/
  position: absolute;
  bottom: 0px;
  width: 100%;
+ height: 40px;
  background-color: rgba(0, 0, 0, 0.4);
 }
 
 footer p {
+ color: white;
  text-align: center;
  margin: 0% 2%;
  width: auto;
@@ -150,18 +138,33 @@ footer a {
  width: auto;
 }
 
+html {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
+  height: 100%;
   font-family: "abel";
-  background-color: darkgrey;
+  /*background-color: darkgrey;*/
   width: 1300px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0px;
+}
+
+#wrapper {
+  box-sizing: border-box;
+  min-height: 100%;
+  position: relative;
+  padding: 0px 0px 40px;
+  width: 100%;
 }
 
 .results-background {
   background-image: url(img-background/results-background.jpg);
   background-attachment: fixed;
-  /*opacity: .5;*/
   background-size: 100%;
   background-repeat: repeat-y;
 }
@@ -226,6 +229,11 @@ p.left.question-text, p.center.question-text, p.right.question-text {
   text-align: center;
 }
 
+#about-title {
+  width: 420px;
+  margin-left: 39%;
+ }
+
 #arboretum-title {
   margin-left: 30%;
   width: 600px;
@@ -239,11 +247,6 @@ p.left.question-text, p.center.question-text, p.right.question-text {
 #annapurna-title {
   width: 550px;
   margin-left: 30%;
-}
-
-#about-title {
-  width: 420px;
-  margin-left: 39%;
 }
 
 .title-description {
@@ -297,11 +300,6 @@ p.left.question-text, p.center.question-text, p.right.question-text {
   width: 700px;
 }
 
-
-.blockquote{
-  font-size: 20px;
-}
-
 #about-background {
   background: url("img/mountain_cloud_background.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -317,7 +315,6 @@ p.left.question-text, p.center.question-text, p.right.question-text {
 .bitmoji {
   width: 300px;
   margin-right: 15px;
-  /*border: 1px solid black;*/
 }
 
 #abs-bitmoji {
