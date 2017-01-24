@@ -289,13 +289,13 @@ div {
   width: 700px;
 }
 
-  #about-background {
-    background: url("img/mountain_cloud_background.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
+#about-background {
+  background: url("img/mountain_cloud_background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 .blockquote{
   font-size: 20px;
