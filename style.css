@@ -192,21 +192,20 @@ div {
   opacity: .70;
 }
 
-.left, .center {
+.left, .center, .rigth {
   float: left;
   width: 250px;
 }
 
-.right {
-  float: left;
-  width: 250px;
-}
-
-#right {
+#left-div, #center-div, #right-div {
   border-radius: 25px;
   border: 2px solid black;
   float: left;
   width: 250px;
+}
+
+.image-border {
+  border-radius: 25px;
 }
 
 .title {
@@ -289,7 +288,15 @@ div {
   width: 700px;
 }
 
+<<<<<<< HEAD
 #about-background {
+=======
+.blockquote{
+  font-size: 20px;
+}
+
+#about-html {
+>>>>>>> 707d6d6b5ff050cd5f33c417ebd058a4c2fa4b64
   background: url("img/mountain_cloud_background.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
