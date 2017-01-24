@@ -143,6 +143,9 @@ footer a {
 body {
   font-family: "abel";
   background-color: darkgrey;
+}
+
+.results-background {
   background-image: url(img-background/results-background.jpg);
   background-attachment: fixed;
   background-size: 100%;
