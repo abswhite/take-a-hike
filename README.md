@@ -1,4 +1,4 @@
-# take-a-hike
+# Take A Hike!
 ###Project week for 201
 
 ##Project Proposal Directions
