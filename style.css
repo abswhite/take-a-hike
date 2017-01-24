@@ -76,6 +76,7 @@ header li {
 #annapurna {
   width: 500px;
   margin-right: 10px;
+  margin-left: 190px;
   border-radius: 8px;
   border: 2px solid #C8C8C8 ;
 }
@@ -85,6 +86,7 @@ header li {
   margin-right: 10px;
   border-radius: 8px;
   border: 2px solid #C8C8C8 ;
+  margin-left: 190px;
 }
 
 #arboretum {
@@ -92,18 +94,19 @@ header li {
   margin-right: 10px;
   border-radius: 8px;
   border: 2px solid #C8C8C8 ;
+  margin-left: 190px;
 }
 
 #arboretum-equipment {
-  margin-top: 80px;
+  text-align: center;
 }
 
 #tiger-equipment {
-  margin-top: 142px;
+  text-align: center;
 }
 
 #annapurna-equipment {
-  margin-top: 78px;
+  text-align: center;
 }
 
 .no-dot-list {
@@ -150,7 +153,7 @@ body {
   background-attachment: fixed;
   /*opacity: .5;*/
   background-size: 100%;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
 }
 
 main {
@@ -163,6 +166,11 @@ main {
 
 h1, h2, h3 {
   font-family: "michroma";
+  text-align: center;
+}
+
+p, ul {
+  font-size: 17px;
 }
 
 div {
@@ -203,13 +211,13 @@ div {
 }
 
 #arboretum-title {
-  margin-left: 23%;
+  margin-left: 30%;
   width: 600px;
 }
 
 #west-tiger-title {
   width: 320px;
-  margin-left: 33%;
+  margin-left: 40%;
 }
 
 #annapurna-title {
@@ -228,13 +236,26 @@ div {
   font-size: 18px;
 }
 
+#annapurna-title-description {
+  margin-left: 23%;
+}
+
+#arboretum-title-description {
+  margin-left: 23%;
+}
+
+#west-tiger-title-description {
+  margin-left: 23%;
+}
+
+
 .quick-facts {
   padding: 3px 6px 10px 10px;
   margin-right: auto;
   margin-left: 10px;
   background-color: white;
   opacity: .65;
-  width: 550px;
+  width: 500px;
   border-radius: 8px;
   font-size: 18px;
 }
@@ -251,7 +272,12 @@ div {
   border-radius: 8px;
   margin-bottom: 20px;
   margin-top: 20px;
+  margin-left: 330px;
   width: 700px;
+}
+
+.blockquote{
+  font-size: 20px;
 }
 
   #about-html {
