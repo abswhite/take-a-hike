@@ -119,10 +119,12 @@ footer {
  position: absolute;
  bottom: 0px;
  width: 100%;
+ height: 40px;
  background-color: rgba(0, 0, 0, 0.4);
 }
 
 footer p {
+ color: white;
  text-align: center;
  margin: 0% 2%;
  width: auto;
@@ -136,12 +138,28 @@ footer a {
  width: auto;
 }
 
+html {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
+  height: 100%;
   font-family: "abel";
-  background-color: darkgrey;
+  /*background-color: darkgrey;*/
   width: 1300px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0px;
+}
+
+#wrapper {
+  box-sizing: border-box;
+  min-height: 100%;
+  position: relative;
+  padding: 0px 0px 40px;
+  width: 100%;
 }
 
 .results-background {
@@ -211,6 +229,11 @@ p.left.question-text, p.center.question-text, p.right.question-text {
   text-align: center;
 }
 
+#about-title {
+  width: 420px;
+  margin-left: 39%;
+ }
+
 #arboretum-title {
   margin-left: 30%;
   width: 600px;
@@ -224,11 +247,6 @@ p.left.question-text, p.center.question-text, p.right.question-text {
 #annapurna-title {
   width: 550px;
   margin-left: 30%;
-}
-
-#about-title {
-  width: 420px;
-  margin-left: 39%;
 }
 
 .title-description {
@@ -280,11 +298,6 @@ p.left.question-text, p.center.question-text, p.right.question-text {
   margin-top: 20px;
   margin-left: 300px;
   width: 700px;
-}
-
-
-.blockquote{
-  font-size: 20px;
 }
 
 #about-background {
