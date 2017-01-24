@@ -1,48 +1,321 @@
+#hp-description {
+  background-color: white;
+  opacity: .70;
+  color: #383838;
+  border-radius: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: 22px;
+}
+
+#large-logo {
+  margin-left: 30%;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+#small-logo {
+  float: left;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+#nav {
+  font-size: 20px;
+  margin-top: 8px;
+  position: inline;
+  float: left;
+}
+
+nav a:hover {
+  color: white;
+  background: #2E2E2E	;
+}
+
+.nav-links {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #2E2E2E;
+  background-color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 8px;
+  padding-left: 8px;
+  hover: white;
+  border-radius: 8px;
+  opacity: .85;
+}
+
+.content {
+  float: clear;
+  font-family: "abel";
+}
+
 header {
   position: relative;
   top: 0px;
   left: 0px;
-  /*background-color: #A9C9A4;*/
 }
 
 header li {
   display: inline;
 }
 
-/*#left, #middle, #right {
-  float: left;
-}*/
+#annapurna {
+  width: 500px;
+  margin-right: 10px;
+  margin-left: 190px;
+  border-radius: 8px;
+  border: 2px solid #C8C8C8 ;
+}
+
+#tiger-mountain {
+  width: 500px;
+  margin-right: 10px;
+  border-radius: 8px;
+  border: 2px solid #C8C8C8 ;
+  margin-left: 190px;
+}
+
+#arboretum {
+  width: 500px;
+  margin-right: 10px;
+  border-radius: 8px;
+  border: 2px solid #C8C8C8 ;
+  margin-left: 190px;
+}
+
+#arboretum-equipment {
+  text-align: center;
+}
+
+#tiger-equipment {
+  text-align: center;
+}
+
+#annapurna-equipment {
+  text-align: center;
+}
+
+.no-dot-list {
+  list-style-type: none;
+}
+
+.grow:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.grow-hover {
+  width:483px;
+  height:298px;
+  background:#676470;
+  transition:all 0.3s ease;
+}
 
 footer {
-  /*background-color: #A9C9A4;*/
-  bottom: 0px;
-  width: 100%;
+ position: absolute;
+ bottom: 0px;
+ width: 100%;
+ background-color: rgba(0, 0, 0, 0.4);
+}
+
+footer p {
+ text-align: center;
+ margin: 0% 2%;
+ width: auto;
+}
+
+footer a {
+ color: white;
+ text-decoration: none;
+ text-align: center;
+ margin: 0px;
+ width: auto;
 }
 
 body {
   font-family: "abel";
-  background-color: lightgrey;
+  background-color: darkgrey;
+  width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-h1, h3 {
+.results-background {
+  background-image: url(img-background/results-background.jpg);
+  background-attachment: fixed;
+  background-size: 100%;
+  background-repeat: repeat-y;
+}
+
+main {
+  text-align: center;
+  margin: auto;
+  max-width: 900px;
+  min-width: 450px;
+  padding: 0px;
+}
+
+h1, h2, h3 {
   font-family: "michroma";
+  text-align: center;
+}
+
+p, ul {
+  font-size: 17px;
 }
 
 div {
   float: left;
-  font-family: 'Libre Baskerville', serif;
 }
 
-#left {
-  padding-right: 50px;
+.question-text {
+  background-color: white;
+  opacity: .70;
+}
+
+h1.question-text, h2.question-text {
+  border-radius: 8px;
+}
+
+.left, .center, .right {
+  float: left;
   width: 250px;
 }
 
-#center {
-  padding-right: 50px;
-  width 250px;
+p.left.question-text, p.center.question-text, p.right.question-text {
+  font-size: 25px;
 }
 
-#right {
+#left-div, #center-div, #right-div {
+  margin-right: 15px;
+  border-radius: 8px;
+  border: 2px solid black;
+  float: left;
   width: 250px;
+}
+
+.image-border {
+  border-radius: 8px;
+}
+
+.title {
+  padding: 6px 6px 10px 10px;
+  margin-right: auto;
+  background-color: white;
+  opacity: .85;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#arboretum-title {
+  margin-left: 30%;
+  width: 600px;
+}
+
+#west-tiger-title {
+  width: 320px;
+  margin-left: 40%;
+}
+
+#annapurna-title {
+  width: 550px;
+  margin-left: 30%;
+}
+
+#about-title {
+  width: 420px;
+  margin-left: 39%;
+}
+
+.title-description {
+  padding: 6px 6px 10px 10px;
+  margin-right: auto;
+  margin-left: 16%;
+  background-color: white;
+  opacity: .65;
+  width: 750px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+#annapurna-title-description {
+  margin-left: 23%;
+}
+
+#arboretum-title-description {
+  margin-left: 23%;
+}
+
+#west-tiger-title-description {
+  margin-left: 23%;
+}
+
+
+.quick-facts {
+  padding: 3px 6px 10px 10px;
+  margin-right: auto;
+  margin-left: 10px;
+  background-color: white;
+  opacity: .65;
+  width: 500px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.quickfacts h3 {
+  text-align: center;
+}
+
+.quote {
+  padding: 0px 6px 10px 10px;
+  float: clear;
+  background-color: white;
+  opacity: .65;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 300px;
+  width: 700px;
+}
+
+
+.blockquote{
+  font-size: 20px;
+}
+
+#about-background {
+  background: url("img/mountain_cloud_background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.blockquote{
+  font-size: 20px;
+}
+
+.bitmoji {
+  width: 300px;
+  margin-right: 15px;
+}
+
+#abs-bitmoji {
+  width: 300px;
+}
+
+#alex-bitmoji {
+  width: 300px;
+}
+
+#miguel-bitmoji {
+  width: 300px;
+}
+
+#steven-bitmoji {
+  width: 300px;
 }

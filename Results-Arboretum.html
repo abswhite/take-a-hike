@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style class="grow-hover" type="text/css"></style>
     <link href="style.css" type="text/css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Abel|Michroma" rel="stylesheet">
     <title>Take a Hike!</title>
   </head>
-  <body>
-    <header>
-      <img src="img/Logomakr_8OfsTU.png" alt="take a hike logo"/>
+  <body class="results-background">
+    <header "top-bar">
+      <a href="index.html"><img src="img-background/Logo-small-white.png" alt="take a hike logo" id="small-logo"/></a>
 
-      <nav>
+      <nav id="nav">
+      <div class="grow">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="question.html">Quiz</a></li>
-          <li><a href="about.html">About Us</a></li>
+          <li><a href="index.html" class="nav-links">Home</a></li>
+          <li><a href="question.html" class="nav-links">Quiz</a></li>
+          <li><a href="about.html" class="nav-links">About Us</a></li>
         </ul>
+      </div>
       </nav>
     </header>
 
-        <h1>Washington Park Arboretum</h1>
+<div class="content">
+        <h1 class="title" id="arboretum-title">Washington Park Arboretum</h1>
 
-        <p>A pocket of wilderness in the heart of Seattle, this is a great leisurely nature path with forests of maple trees, magnolias, oaks, salmonberries, and azaleas. The park is accessible year-round, but in the springtime, you will see the most beautiful flowers and trees.</p>
+        <p class="title-description" id="arboretum-title-description">A pocket of wilderness in the heart of Seattle, this is a great leisurely nature path with forests of maple trees, magnolias, oaks, salmonberries, and azaleas. The park is accessible year-round, but in the springtime, you will see the most beautiful flowers and trees.</p>
 
-        <div>Images in this div</div>
 
+        <div><img id="arboretum" src="img/Arboretum.jpg" alt=""></div>
+
+      <div class="quick-facts">
       <h3>Quick Facts</h3>
-      <ul>
+      <ul class="no-dot-list">
         <li><b>Location:</b> Seattle-Tacoma Area</li>
         <li><b>Difficulty:</b> Easy-peasy</li>
         <li><b>Length:</b> 5 miles, round trip</li>
@@ -40,8 +46,10 @@
           <li><b>Extras:</b> The nearby public park offers locations for picnicking and lounging, for members of the hiking party who may not want to hike the whole trail.</li>
 
         </ul>
+      </div>
 
-        <h3>Recommended Equipment</h3>
+<div class="quote">
+        <h3 id="arboretum-equipment">Recommended Equipment</h3>
         <ul>
           <li>Backpack</li>
           <li>Water for the day</li>
@@ -50,12 +58,16 @@
           <li>Sunscreen</li>
       </li>
         </ul>
+      </div>
+      <div class="quote">
 
       <h3>Recommended Reading</h3>
       <p>Wildflowers of the Pacific Northwest</p>
-<footer>
+</div>
+    </div>
+</body>
+<!-- <footer>
  <p>Take A Hike! designed and developed by <a href="about.html">Abigail White, Alex Cahn, Miguel Pena, Steven Johnson.</a></p>
  <p>All photos courtesy of unsplash.com</p>
-</footer>
-</body>
+</footer> -->
 </html>

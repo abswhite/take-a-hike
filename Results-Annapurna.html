@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style class="grow-hover" type="text/css"></style>
     <link href="style.css" type="text/css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Abel|Michroma" rel="stylesheet">
     <title>Take a Hike!</title>
   </head>
-  <body>
-    <header>
-      <img src="img/Logomakr_8OfsTU.png" alt="take a hike logo"/>
-      <nav>
+  <body class="results-background">
+    <header "top-bar">
+      <a href="index.html"><img src="img-background/Logo-small-white.png" alt="take a hike logo" id="small-logo"/></a>
+
+      <nav id="nav">
+      <div class="grow">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="question.html">Quiz</a></li>
-          <li><a href="about.html">About Us</a></li>
+          <li><a href="index.html" class="nav-links">Home</a></li>
+          <li><a href="question.html" class="nav-links">Quiz</a></li>
+          <li><a href="about.html" class="nav-links">About Us</a></li>
         </ul>
+      </div>
       </nav>
     </header>
 
-    <h1>Annapurna I Summit</h1>
+    <div class="content">
 
-    <p>Widely considered The World’s Deadliest Mountain, Annapurna is best suited to the adventurous, brave, and existential type of hiker. You will want to book a mountaineering guide, and climb in a group of 10 to 15 people. It takes 53 days typically (acclimation and climbing), and costs around $20,000.</p>
+    <h1 class="title" id="annapurna-title">Annapurna I Summit</h1>
 
-    <div>Images in this div</div>
+    <p class="title-description" id="annapurna-title-description">Widely considered The World’s Deadliest Mountain, Annapurna is best suited to the adventurous, brave, and existential type of hiker. You will want to book a mountaineering guide, and climb in a group of 10 to 15 people. It takes 53 days typically (acclimation and climbing), and costs around $20,000.</p>
+
+    <div><img id="annapurna" src="img/annapurna I.jpg" alt=""></div>
 
 <!-- List all necessary information -->
-  <h3>Memorable quote:</h3>
-  <blockquote>“We slept like a dead and knew nothing. Early morning there came some friends from another camp to congratulate and express their heartfelt condolence. We were in sorrow, we were tired and still we wanted to rescue our casualties but it was not easy and not possible from that point. Aerial rescue was not possible to that height and getting to that area by climbing means putting more lives in danger.” <br><cite>--Excerpt from Mingma Sherpa’s Annapurna Diary, March 27, 2015</cite></blockquote>
 
+  <div class="quick-facts">
   <h3>Quick Facts</h3>
-  <ul>
+  <ul class="no-dot-list">
     <li><b>Location:</b> Himalayas</li>
     <li><b>Difficulty:</b> Most Difficult</li>
     <li><b>Length:</b> 8 miles</li>
@@ -36,8 +41,14 @@
     <li><b>Hiking Permit:</b> Required ($1,800)</li>
 
     </ul>
+  </div>
 
-  <h3>Recommended Equipment</h3>
+<div class="quote">
+  <h3>Memorable Quote:</h3>
+  <blockquote class="blockquote">“We slept like a dead and knew nothing. Early morning there came some friends from another camp to congratulate and express their heartfelt condolence. We were in sorrow, we were tired and still we wanted to rescue our casualties but it was not easy and not possible from that point. Aerial rescue was not possible to that height and getting to that area by climbing means putting more lives in danger.” <br><cite>--Excerpt from Mingma Sherpa’s Annapurna Diary, March 27, 2015</cite></blockquote>
+</div>
+<div  class="quote">
+  <h3 id="annapurna-equipment">Recommended Equipment</h3>
   <ul>
     <li>Ice axe</li>
     <li>Crampons</li>
@@ -54,16 +65,20 @@
     <li>Tape slings</li>
 </li>
   </ul>
+</div>
 
+<div class="quote">
   <h3>Mortality on Trail</h3>
-  <p>61 total deaths, 191 successful ascents.Annapurna I has the greatest fatality rate among the 14 eight-thousanders. The 34% death rate is followed by 29% for K2 and 21% for Nanga Parbat. Mount Everest is 6.5%.</p>
+  <p>61 total deaths, 191 successful ascents. Annapurna I has the greatest fatality rate among the 14 eight-thousanders. The 34% death rate is followed by 29% for K2 and 21% for Nanga Parbat. Mount Everest is 6.5%.</p>
+</div>
 
+<div  class="quote">
   <h3>Recommended Reading</h3>
   <p>Herzog, Maurice, Annapurna, Jonathan Cape, 1952, Ohmori, Koichiro, Over the Himalaya, Cloudcap Press, 1998, Neate, Jill High Asia: An Illustrated History of the 7000 Metre Peaks (maybe the Bible or the Quran if you feel like you need to get right with God first?)</p>
-
-<footer>
+</div>
+<!-- <footer>
  <p>Take A Hike! designed and developed by <a href="about.html">Abigail White, Alex Cahn, Miguel Pena, Steven Johnson.</a></p>
  <p>All photos courtesy of unsplash.com</p>
-</footer>
+</footer> -->
 </body>
 </html>
