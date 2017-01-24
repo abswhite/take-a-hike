@@ -168,20 +168,24 @@ div {
   float: left;
 }
 
-#left, #center {
-  border-radius: 25px;
-  border: 2px solid black;
-  padding-right: 50px;
+.left, .center {
   float: left;
   width: 250px;
 }
 
-#right {
-  border-radius: 25px;
-  border: 2px solid black;
+.right {
   float: left;
   width: 250px;
 }
+
+#left-div, #center-div, #right-div {
+  font-size: 25px;
+  border-radius: 25px;
+  border: 2px solid black;
+}
+
+.image-border {
+  border-radius: 25px;
 
 .title {
   padding: 6px 6px 10px 10px;
