@@ -146,6 +146,9 @@ footer a {
 body {
   font-family: "abel";
   background-color: darkgrey;
+  width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .results-background {
