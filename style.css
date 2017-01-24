@@ -148,6 +148,7 @@ body {
 .results-background {
   background-image: url(img-background/results-background.jpg);
   background-attachment: fixed;
+  /*opacity: .5;*/
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -166,6 +167,11 @@ h1, h2, h3 {
 
 div {
   float: left;
+}
+
+.question-text {
+  background-color: white;
+  opacity: .70;
 }
 
 .left, .center {
