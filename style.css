@@ -122,10 +122,10 @@ header li {
 
 
 footer {
- /*background-color: #A9C9A4 ;*/
  position: absolute;
  bottom: 0px;
  width: 100%;
+ height: 40px;
  background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -143,12 +143,27 @@ footer a {
  width: auto;
 }
 
+html {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
+  height: 100%;
   font-family: "abel";
-  background-color: darkgrey;
+  /*background-color: darkgrey;*/
   width: 1300px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0px;
+}
+
+#wrapper {
+  box-sizing: border-box;
+  min-height: 100%;
+  position: relative;
+  padding: 0px 0px 40px;
 }
 
 .results-background {
