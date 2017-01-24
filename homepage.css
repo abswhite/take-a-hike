@@ -14,6 +14,7 @@
   padding-right: 8px;
   padding-left: 8px;
   border-radius: 8px;
+  border: 2px solid white;
   font-size: 45px;
 }
 
@@ -32,7 +33,7 @@
 #large-logo {
   margin-left: 30%;
   margin-right: auto;
-  margin-top: 50px;
+  margin-top: 5%;
 }
 
 #small-logo {
