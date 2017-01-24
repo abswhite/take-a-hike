@@ -161,6 +161,14 @@ body {
   padding: 0px;
 }
 
+.map-class {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+  border-radius: 8px;
+}
+
 #wrapper {
   box-sizing: border-box;
   min-height: 100%;
