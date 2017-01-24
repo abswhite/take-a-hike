@@ -30,6 +30,7 @@ function createImages() {
 
 function displayQuestion(questionIndex) {
   h2El = document.createElement('h2');
+  h2El.setAttribute('class', 'question-text');
   h2El.textContent = questions[questionIndex];
   divLeftEl = document.createElement('div');
   divLeftEl.setAttribute('class', 'left');
@@ -42,6 +43,7 @@ function displayQuestion(questionIndex) {
   imgLeftEl.setAttribute('height', '250');
   pLeftEl = document.createElement('p');
   pLeftEl.setAttribute('class', 'left');
+  pLeftEl.setAttribute('class', 'question-text');
   pLeftEl.textContent = textResponses[questionIndex][0];
 
   divCenterEl = document.createElement('div');
@@ -55,6 +57,7 @@ function displayQuestion(questionIndex) {
   imgCenterEl.setAttribute('height', '250');
   pCenterEl = document.createElement('p');
   pCenterEl.setAttribute('class', 'center');
+  pCenterEl.setAttribute('class', 'question-text');
   pCenterEl.textContent = textResponses[questionIndex][1];
 
   divRightEl = document.createElement('div');
@@ -68,6 +71,7 @@ function displayQuestion(questionIndex) {
   imgRightEl.setAttribute('height', '250');
   pRightEl = document.createElement('p');
   pRightEl.setAttribute('class', 'right');
+  pRightEl.setAttribute('class', 'question-text');
   pRightEl.textContent = textResponses[questionIndex][2];
 
   mainEl.appendChild(h2El);

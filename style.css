@@ -151,6 +151,7 @@ body {
 .results-background {
   background-image: url(img-background/results-background.jpg);
   background-attachment: fixed;
+  /*opacity: .5;*/
   background-size: 100%;
   background-repeat: repeat-y;
 }
@@ -176,10 +177,17 @@ div {
   float: left;
 }
 
-#left, #center {
-  border-radius: 25px;
-  border: 2px solid black;
-  padding-right: 50px;
+.question-text {
+  background-color: white;
+  opacity: .70;
+}
+
+.left, .center {
+  float: left;
+  width: 250px;
+}
+
+.right {
   float: left;
   width: 250px;
 }
