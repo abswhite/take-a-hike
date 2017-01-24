@@ -32,36 +32,42 @@ function displayQuestion(questionIndex) {
   h2El = document.createElement('h2');
   h2El.textContent = questions[questionIndex];
   divLeftEl = document.createElement('div');
-  divLeftEl.setAttribute('id', 'left');
+  divLeftEl.setAttribute('class', 'left');
+  divLeftEl.setAttribute('id', 'left-div');
   imgLeftEl = document.createElement('img');
   imgLeftEl.setAttribute('src', filePathResponses[questionIndex][0]);
-  imgLeftEl.setAttribute('id', 'left');
+  imgLeftEl.setAttribute('class', 'left');
+  imgLeftEl.setAttribute('class', 'image-border');
   imgLeftEl.setAttribute('width', '250');
   imgLeftEl.setAttribute('height', '250');
   pLeftEl = document.createElement('p');
-  pLeftEl.setAttribute('id', 'left');
+  pLeftEl.setAttribute('class', 'left');
   pLeftEl.textContent = textResponses[questionIndex][0];
 
   divCenterEl = document.createElement('div');
-  divCenterEl.setAttribute('id', 'center');
+  divCenterEl.setAttribute('class', 'center');
+  divCenterEl.setAttribute('id', 'center-div');
   imgCenterEl = document.createElement('img');
   imgCenterEl.setAttribute('src', filePathResponses[questionIndex][1]);
-  imgCenterEl.setAttribute('id', 'center');
+  imgCenterEl.setAttribute('class', 'center');
+  imgCenterEl.setAttribute('class', 'image-border');
   imgCenterEl.setAttribute('width', '250');
   imgCenterEl.setAttribute('height', '250');
   pCenterEl = document.createElement('p');
-  pCenterEl.setAttribute('id', 'center');
+  pCenterEl.setAttribute('class', 'center');
   pCenterEl.textContent = textResponses[questionIndex][1];
 
   divRightEl = document.createElement('div');
-  divRightEl.setAttribute('id', 'right');
+  divRightEl.setAttribute('class', 'right');
+  divRightEl.setAttribute('id', 'right-div');
   imgRightEl = document.createElement('img');
   imgRightEl.setAttribute('src', filePathResponses[questionIndex][2]);
-  imgRightEl.setAttribute('id', 'right');
+  imgRightEl.setAttribute('class', 'right');
+  imgRightEl.setAttribute('class', 'image-border');
   imgRightEl.setAttribute('width', '250');
   imgRightEl.setAttribute('height', '250');
   pRightEl = document.createElement('p');
-  pRightEl.setAttribute('id', 'right');
+  pRightEl.setAttribute('class', 'right');
   pRightEl.textContent = textResponses[questionIndex][2];
 
   mainEl.appendChild(h2El);
@@ -119,9 +125,9 @@ function onClickResponse(event) {
   console.log(event.target.getAttribute('id'));
   clickCounter++;
 
-  if (event.target.getAttribute('id') === 'left') {
+  if (event.target.getAttribute('class') === 'left') {
     easyHikeCounter++;
-  } else if (event.target.getAttribute('id') === 'center') {
+  } else if (event.target.getAttribute('class') === 'center') {
     mediumHikeCounter++;
   } else {
     hardHikeCounter++;
