@@ -185,20 +185,29 @@ div {
   opacity: .70;
 }
 
-.left, .center, .rigth {
+h1.question-text, h2.question-text {
+  border-radius: 8px;
+}
+
+.left, .center, .right {
   float: left;
   width: 250px;
 }
 
+p.left.question-text, p.center.question-text, p.right.question-text {
+  font-size: 25px;
+}
+
 #left-div, #center-div, #right-div {
-  border-radius: 25px;
+  margin-right: 15px;
+  border-radius: 8px;
   border: 2px solid black;
   float: left;
   width: 250px;
 }
 
 .image-border {
-  border-radius: 25px;
+  border-radius: 8px;
 }
 
 .title {
