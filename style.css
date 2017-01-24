@@ -143,6 +143,9 @@ footer a {
 body {
   font-family: "abel";
   background-color: darkgrey;
+}
+
+.results-background {
   background-image: url(img-background/results-background.jpg);
   background-attachment: fixed;
   background-size: 100%;
@@ -243,6 +246,7 @@ div {
   margin-bottom: 20px;
   margin-top: 20px;
   width: 700px;
+}
 
   #about-html {
   background: url("img/mountain_cloud_background.jpg") no-repeat center center fixed;
