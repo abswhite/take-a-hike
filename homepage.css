@@ -5,10 +5,6 @@
   -o-background-size: cover;
   background-size: cover;
 }
-/*#homepage {
-  background-image: url(img/homepage-background1.jpg);
-  background-size: 100% auto;
-}*/
 
 #begin {
   margin-right: auto;
@@ -93,24 +89,17 @@ nav a:hover {
   font-family: "abel";
 }
 
-
 header {
   position: relative;
   top: 0px;
   left: 0px;
-  /*background-color: #A9C9A4;*/
 }
 
 header li {
   display: inline;
 }
 
-/*#left, #middle, #right {
-  float: left;
-}*/
-
 footer {
- /*background-color: #A9C9A4 ;*/
  position: absolute;
  bottom: 0px;
  width: 100%;
@@ -136,7 +125,6 @@ body {
   color: white;
   margin-right: auto;
   margin-left: auto;
-  /*background-color: darkgrey;*/
   width: 1300px;
 
 }
