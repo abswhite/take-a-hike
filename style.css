@@ -183,24 +183,20 @@ div {
   float: left;
 }
 
-.left, .center {
-  float: left;
-  width: 250px;
-}
-
-.right {
-  float: left;
-  width: 250px;
-}
-
-#left-div, #center-div, #right-div {
-  font-size: 25px;
+#left, #center {
   border-radius: 25px;
   border: 2px solid black;
+  padding-right: 50px;
+  float: left;
+  width: 250px;
 }
 
-.image-border {
+#right {
   border-radius: 25px;
+  border: 2px solid black;
+  float: left;
+  width: 250px;
+}
 
 .title {
   padding: 6px 6px 10px 10px;
@@ -278,7 +274,7 @@ div {
   border-radius: 8px;
   margin-bottom: 20px;
   margin-top: 20px;
-  margin-left: 330px;
+  margin-left: 300px;
   width: 700px;
 }
 
