@@ -3,10 +3,74 @@
   background-size: 100% auto;
 }
 
+#begin {
+  margin-right: auto;
+  margin-left: 46%;
+  text-decoration: none;
+  color: #2E2E2E;
+  background-color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 8px;
+  padding-left: 8px;
+  border-radius: 8px;
+  font-size: 45px;
+}
+
+#hp-description {
+  background-color: white;
+  opacity: .70;
+  color: #383838;
+  border-radius: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: 22px;
+}
+
 #large-logo {
   margin-left: 30%;
   margin-right: auto;
+  margin-top: 50px;
 }
+
+#small-logo {
+  float: left;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+#nav {
+  font-size: 20px;
+  margin-top: 8px;
+  position: inline;
+  float: left;
+}
+
+a:hover {
+  color: white;
+  background: #2E2E2E;
+}
+
+.nav-links {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #2E2E2E;
+  background-color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 8px;
+  padding-left: 8px;
+  hover: white;
+  border-radius: 8px;
+  opacity: .85;
+}
+
+.content {
+  float: clear;
+  font-family: "abel";
+}
+
 
 header {
   position: relative;
@@ -24,9 +88,25 @@ header li {
 }*/
 
 footer {
-  /*background-color: #A9C9A4;*/
-  bottom: 0px;
-  width: 100%;
+ /*background-color: #A9C9A4 ;*/
+ position: absolute;
+ bottom: 0px;
+ width: 100%;
+ background-color: rgba(0, 0, 0, 0.4);
+}
+
+footer p {
+ text-align: center;
+ margin: 0% 2%;
+ width: auto;
+}
+
+footer a {
+ color: white;
+ text-decoration: none;
+ text-align: center;
+ margin: 0px;
+ width: auto;
 }
 
 body {
@@ -39,7 +119,8 @@ body {
 
 h1, h3{
   font-family: "michroma";
-  padding: 0 0 0 0;
+  width: 400px;
+  margin-left: 36%;
   text-align: center;
 }
 
