@@ -125,10 +125,12 @@ footer a {
 
 body {
   font-family: "abel";
-  background-color: lightgrey;
   color: white;
   margin-right: auto;
   margin-left: auto;
+  background-color: darkgrey;
+  width: 1300px;
+
 }
 
 h1, h3{
