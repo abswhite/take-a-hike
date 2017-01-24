@@ -68,6 +68,42 @@ header li {
   display: inline;
 }
 
+
+/*#left, #middle, #right {
+  float: left;
+}*/
+
+#annapurna {
+  width: 500px;
+  margin-right: 10px;
+}
+
+#tiger-mountain {
+  width: 500px;
+  margin-right: 10px;
+}
+
+#arboretum {
+  width: 500px;
+  margin-right: 10px;
+}
+
+#arboretum-equipment {
+  margin-top: 80px;
+}
+
+#tiger-equipment {
+  margin-top: 142px;
+}
+
+#annapurna-equipment {
+  margin-top: 78px;
+}
+
+.no-dot-list {
+  list-style-type: none;
+}
+
 footer {
  /*background-color: #A9C9A4 ;*/
  position: absolute;
