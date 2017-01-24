@@ -9,10 +9,6 @@ header li {
   display: inline;
 }
 
-/*#left, #middle, #right {
-  float: left;
-}*/
-
 footer {
   /*background-color: #A9C9A4;*/
   bottom: 0px;
@@ -24,25 +20,33 @@ body {
   background-color: lightgrey;
 }
 
-h1, h3 {
+main {
+  text-align: center;
+  margin: auto;
+  max-width: 900px;
+  min-width: 450px;
+  padding: 0px;
+}
+
+h1, h2, h3 {
   font-family: "michroma";
 }
 
 div {
   float: left;
-  font-family: 'Libre Baskerville', serif;
 }
 
-#left {
+#left, #center {
+  border-radius: 25px;
+  border: 2px solid black;
   padding-right: 50px;
+  float: left;
   width: 250px;
 }
 
-#center {
-  padding-right: 50px;
-  width 250px;
-}
-
 #right {
+  border-radius: 25px;
+  border: 2px solid black;
+  float: left;
   width: 250px;
 }
