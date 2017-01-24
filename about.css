@@ -161,6 +161,7 @@ p, ul {
 
 div {
   float: left;
+  width: 250px;
 }
 
 .question-text {
