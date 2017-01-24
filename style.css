@@ -192,14 +192,12 @@ div {
   width: 250px;
 }
 
-#left-div, #center-div, #right-div {
-  font-size: 25px;
+#right {
   border-radius: 25px;
   border: 2px solid black;
+  float: left;
+  width: 250px;
 }
-
-.image-border {
-  border-radius: 25px;
 
 .title {
   padding: 6px 6px 10px 10px;
@@ -272,7 +270,7 @@ div {
   border-radius: 8px;
   margin-bottom: 20px;
   margin-top: 20px;
-  margin-left: 330px;
+  margin-left: 300px;
   width: 700px;
 }
 
