@@ -95,7 +95,7 @@ function removeQuestion() {
 }
 
 function getResult() {
-  return counters.indexOf(Math.max(...counters));
+  return counters.indexOf(Math.max(...counters)); //this works.. trust us
 }
 
 
