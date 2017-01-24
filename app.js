@@ -37,13 +37,11 @@ function displayQuestion(questionIndex) {
   divLeftEl.setAttribute('id', 'left-div');
   imgLeftEl = document.createElement('img');
   imgLeftEl.setAttribute('src', filePathResponses[questionIndex][0]);
-  imgLeftEl.setAttribute('class', 'left');
-  imgLeftEl.setAttribute('class', 'image-border');
+  imgLeftEl.setAttribute('class', 'left image-border');
   imgLeftEl.setAttribute('width', '250');
   imgLeftEl.setAttribute('height', '250');
   pLeftEl = document.createElement('p');
-  pLeftEl.setAttribute('class', 'left');
-  pLeftEl.setAttribute('class', 'question-text');
+  pLeftEl.setAttribute('class', 'left question-text');
   pLeftEl.textContent = textResponses[questionIndex][0];
 
   divCenterEl = document.createElement('div');
@@ -51,13 +49,11 @@ function displayQuestion(questionIndex) {
   divCenterEl.setAttribute('id', 'center-div');
   imgCenterEl = document.createElement('img');
   imgCenterEl.setAttribute('src', filePathResponses[questionIndex][1]);
-  imgCenterEl.setAttribute('class', 'center');
-  imgCenterEl.setAttribute('class', 'image-border');
+  imgCenterEl.setAttribute('class', 'center image-border');
   imgCenterEl.setAttribute('width', '250');
   imgCenterEl.setAttribute('height', '250');
   pCenterEl = document.createElement('p');
-  pCenterEl.setAttribute('class', 'center');
-  pCenterEl.setAttribute('class', 'question-text');
+  pCenterEl.setAttribute('class', 'center question-text');
   pCenterEl.textContent = textResponses[questionIndex][1];
 
   divRightEl = document.createElement('div');
@@ -65,13 +61,11 @@ function displayQuestion(questionIndex) {
   divRightEl.setAttribute('id', 'right-div');
   imgRightEl = document.createElement('img');
   imgRightEl.setAttribute('src', filePathResponses[questionIndex][2]);
-  imgRightEl.setAttribute('class', 'right');
-  imgRightEl.setAttribute('class', 'image-border');
+  imgRightEl.setAttribute('class', 'right image-border');
   imgRightEl.setAttribute('width', '250');
   imgRightEl.setAttribute('height', '250');
   pRightEl = document.createElement('p');
-  pRightEl.setAttribute('class', 'right');
-  pRightEl.setAttribute('class', 'question-text');
+  pRightEl.setAttribute('class', 'right question-text');
   pRightEl.textContent = textResponses[questionIndex][2];
 
   mainEl.appendChild(h2El);
@@ -126,12 +120,12 @@ function onClickResponse(event) {
   event.preventDefault();
   event.stopPropagation();
 
-  console.log(event.target.getAttribute('id'));
+  console.log(event.target.getAttribute('class').split(' ')[0]);
   clickCounter++;
 
-  if (event.target.getAttribute('class') === 'left') {
+  if (event.target.getAttribute('class').split(' ')[0] === 'left') {
     easyHikeCounter++;
-  } else if (event.target.getAttribute('class') === 'center') {
+  } else if (event.target.getAttribute('class').split(' ')[0] === 'center') {
     mediumHikeCounter++;
   } else {
     hardHikeCounter++;
