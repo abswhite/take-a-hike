@@ -12,7 +12,7 @@ var counters = [];
 
 var questions = ['What level of difficulty are you looking for in a hike?', 'How do you feel about dogs and kids?', 'How much elevation gain are you willing to climb?', 'Which region do you prefer?', 'Which hiking movie did you like best?', 'If you HAD to choose, how would you rather die?', 'Do you require a spectacular view?', 'Are you looking for a hike with a lake, river, or waterfall?', 'Would you have cut off your arm? (ie; 127 hours, Aron Ralston)', ' Are you opposed to paying for parking?'];
 
-var textResponses = [['Taking a stroll across the Shire', 'Just to Rivendell and back', 'Taking the ring to Mount Doom'], ['Omg love them!', 'Neither here-nor-there', 'Ugh, is there a difference?'], ['Not much at all', 'A fair amount', 'I want the hike to take my breath away...literally'], ['Local (Washington State)', 'About an hour away', 'Literally as far away as possible'], ['Homeward Bound', 'Wild', 'Into Thin Air'], ['Of boredom ', 'Bears!', 'Avalanche'], ['I’m all about the journey', 'Yes! Do it for the gram!', 'I want to stand on the top of the world'], ['Yes', 'No', 'I’m looking not-die, how about that'], ['LOL NOPE', 'Depends (on which arm, do I have life insurance, are there camera crews nearby, etc)', 'Already have. I am Aron Ralston.'], ['Yes, morally', 'I’m willing to pay for parking, let’s get started!', 'Literally not worried about my car, man']];
+var textResponses = [['Taking a stroll across the Shire', 'Just to Rivendell and back', 'Taking the ring to Mount Doom'], ['Omg love them!', 'Dogs are cool, but kids probably not', 'Ugh, is there a difference?'], ['Not much at all', 'A fair amount', 'I want the hike to take my breath away...literally'], ['Local (Washington State)', 'About an hour away', 'Literally as far away as possible'], ['Homeward Bound', 'Wild', 'Into Thin Air'], ['Of boredom ', 'Bears!', 'Avalanche'], ['I’m all about the journey', 'Yes! Do it for the gram!', 'I want to stand on the top of the world'], ['Yes', 'No', 'I’m looking to not-die, how about that'], ['LOL NOPE', 'Depends (on which arm, do I have life insurance, are there camera crews nearby, etc)', 'Already have. I am Aron Ralston.'], ['Yes, morally', 'I’m willing to pay for parking, let’s get started!', 'Literally not worried about my car, man']];
 
 var filePathResponses = [['img/Q1-left.jpg', 'img/Q1-center.jpg', 'img/Q1-right.jpg'], ['img/Q2-left.jpg', 'img/Q2-center.jpg', 'img/Q2-right.jpg'], ['img/Q3-left.jpg', 'img/Q3-center.jpg', 'img/Q3-right.jpg'], ['img/Q4-left.jpg', 'img/Q4-center.jpg', 'img/Q4-right.jpg'], ['img/Q5-left.jpg', 'img/Q5-center.jpg', 'img/Q5-right.jpg'], ['img/Q6-left.jpg', 'img/Q6-center.jpg', 'img/Q6-right.jpg'], ['img/Q7-left.jpg', 'img/Q7-center.jpg', 'img/Q7-right.jpg'], ['img/Q8-left.jpg', 'img/Q8-center.jpg', 'img/Q8-right.jpg'], ['img/Q9-left.jpg', 'img/Q9-center.jpg', 'img/Q9-right.jpg'], ['img/Q10-left.jpg', 'img/Q10-center.jpg', 'img/Q10-right.jpg']]; // this will be a 2d array that holds 3 filepath strings per element
 
@@ -97,7 +97,7 @@ function getResult() {
 
 function renderResult() {
   var h1El = document.createElement('h1');
-  h1El.textContent = 'Thank you for playing! Your perfect hike is:';
+  h1El.textContent = 'Thank you for playing! Your perfect hike is: ';
   var aEl = document.createElement('a');
 
   if (getResult() === 0) {
