@@ -28,9 +28,9 @@
 }
 
 #small-logo:hover {
-  -webkit-transform: scale(1.3);
--ms-transform: scale(1.3);
-transform: scale(1.3);
+  -webkit-transform: scale(1.08);
+-ms-transform: scale(1.08);
+transform: scale(1.08);
 }
 
 #nav {
@@ -100,7 +100,6 @@ footer {
  bottom: 0px;
  width: 100%;
  height: 40px;
- background-color: rgba(0, 0, 0, 0.4);
 }
 
 footer p {
@@ -108,14 +107,19 @@ footer p {
  text-align: center;
  margin: 0% 2%;
  width: auto;
+ color: #EDEDED;
 }
 
 footer a {
- color: white;
+color: #EDEDED;
  text-decoration: none;
  text-align: center;
  margin: 0px;
  width: auto;
+}
+
+footer a:hover{
+  color: white;
 }
 
 html {
