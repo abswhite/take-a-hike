@@ -8,6 +8,9 @@ var clickCounter = 0;
 var easyHikeCounter = 0;
 var mediumHikeCounter = 0;
 var hardHikeCounter = 0;
+var totalEasyHikeCounter = 0;
+var totalMediumHikeCounter = 0;
+var totalHardHikeCounter = 0;
 var counters = [];
 
 var questions = ['What level of difficulty are you looking for in a hike?', 'How do you feel about dogs and kids?', 'How much elevation gain are you willing to climb?', 'Which region do you prefer?', 'Which hiking movie did you like best?', 'If you HAD to choose, how would you rather die?', 'Do you require a spectacular view?', 'Are you looking for a hike with a lake, river, or waterfall?', 'Would you have cut off your arm? (ie; 127 hours, Aron Ralston)', ' Are you opposed to paying for parking?'];
@@ -30,38 +33,42 @@ function createImages() {
 
 function displayQuestion(questionIndex) {
   h2El = document.createElement('h2');
+  h2El.setAttribute('class', 'question-text');
   h2El.textContent = questions[questionIndex];
   divLeftEl = document.createElement('div');
-  divLeftEl.setAttribute('id', 'left');
+  divLeftEl.setAttribute('class', 'left');
+  divLeftEl.setAttribute('id', 'left-div');
   imgLeftEl = document.createElement('img');
   imgLeftEl.setAttribute('src', filePathResponses[questionIndex][0]);
-  imgLeftEl.setAttribute('id', 'left');
+  imgLeftEl.setAttribute('class', 'left image-border');
   imgLeftEl.setAttribute('width', '250');
   imgLeftEl.setAttribute('height', '250');
   pLeftEl = document.createElement('p');
-  pLeftEl.setAttribute('id', 'left');
+  pLeftEl.setAttribute('class', 'left question-text');
   pLeftEl.textContent = textResponses[questionIndex][0];
 
   divCenterEl = document.createElement('div');
-  divCenterEl.setAttribute('id', 'center');
+  divCenterEl.setAttribute('class', 'center');
+  divCenterEl.setAttribute('id', 'center-div');
   imgCenterEl = document.createElement('img');
   imgCenterEl.setAttribute('src', filePathResponses[questionIndex][1]);
-  imgCenterEl.setAttribute('id', 'center');
+  imgCenterEl.setAttribute('class', 'center image-border');
   imgCenterEl.setAttribute('width', '250');
   imgCenterEl.setAttribute('height', '250');
   pCenterEl = document.createElement('p');
-  pCenterEl.setAttribute('id', 'center');
+  pCenterEl.setAttribute('class', 'center question-text');
   pCenterEl.textContent = textResponses[questionIndex][1];
 
   divRightEl = document.createElement('div');
-  divRightEl.setAttribute('id', 'right');
+  divRightEl.setAttribute('class', 'right');
+  divRightEl.setAttribute('id', 'right-div');
   imgRightEl = document.createElement('img');
   imgRightEl.setAttribute('src', filePathResponses[questionIndex][2]);
-  imgRightEl.setAttribute('id', 'right');
+  imgRightEl.setAttribute('class', 'right image-border');
   imgRightEl.setAttribute('width', '250');
   imgRightEl.setAttribute('height', '250');
   pRightEl = document.createElement('p');
-  pRightEl.setAttribute('id', 'right');
+  pRightEl.setAttribute('class', 'right question-text');
   pRightEl.textContent = textResponses[questionIndex][2];
 
   mainEl.appendChild(h2El);
@@ -91,14 +98,16 @@ function removeQuestion() {
 }
 
 function getResult() {
-  return counters.indexOf(Math.max(...counters));
+  return counters.indexOf(Math.max(...counters)); //this works.. trust us
 }
 
 
 function renderResult() {
   var h1El = document.createElement('h1');
+  h1El.setAttribute('class', 'question-text');
   h1El.textContent = 'Thank you for playing! Your perfect hike is: ';
   var aEl = document.createElement('a');
+  aEl.setAttribute('class', 'results-text');
 
   if (getResult() === 0) {
     aEl.setAttribute('href', 'Results-Arboretum.html')
@@ -112,19 +121,30 @@ function renderResult() {
   mainEl.appendChild(h1El);
 }
 
+function getLocalStorage() {
+  if (localStorage.length > 0) {
+    totalEasyHikeCounter = JSON.parse(localStorage.getItem('totalEasyHikeCounter'));
+    totalMediumHikeCounter = JSON.parse(localStorage.getItem('totalMediumHikeCounter'));
+    totalHardHikeCounter = JSON.parse(localStorage.getItem('totalHardHikeCounter'));
+  }
+}
+
 function onClickResponse(event) {
   event.preventDefault();
   event.stopPropagation();
 
-  console.log(event.target.getAttribute('id'));
+  console.log(event.target.getAttribute('class').split(' ')[0]);
   clickCounter++;
 
-  if (event.target.getAttribute('id') === 'left') {
+  if (event.target.getAttribute('class').split(' ')[0] === 'left') {
     easyHikeCounter++;
-  } else if (event.target.getAttribute('id') === 'center') {
+    totalEasyHikeCounter++;
+  } else if (event.target.getAttribute('class').split(' ')[0] === 'center') {
     mediumHikeCounter++;
+    totalMediumHikeCounter++;
   } else {
     hardHikeCounter++;
+    totalHardHikeCounter++;
   }
 
   if(clickCounter < 10) {
@@ -134,6 +154,10 @@ function onClickResponse(event) {
     divCenterEl.addEventListener('click', onClickResponse, false);
     divRightEl.addEventListener('click', onClickResponse, false);
   } else {
+    localStorage.setItem('totalEasyHikeCounter', JSON.stringify(totalEasyHikeCounter));
+    localStorage.setItem('totalMediumHikeCounter', JSON.stringify(totalMediumHikeCounter));
+    localStorage.setItem('totalHardHikeCounter', JSON.stringify(totalHardHikeCounter));
+
     counters.push(easyHikeCounter);
     counters.push(mediumHikeCounter);
     counters.push(hardHikeCounter);
@@ -143,6 +167,7 @@ function onClickResponse(event) {
 }
 
 createImages();
+getLocalStorage();
 displayQuestion(0);
 
 divLeftEl.addEventListener('click', onClickResponse, false);

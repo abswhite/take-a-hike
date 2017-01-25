@@ -1,8 +1,3 @@
-#homepage {
-  background-image: url(img/homepage-background1.jpg);
-  background-size: 100% auto;
-}
-
 #hp-description {
   background-color: white;
   opacity: .70;
@@ -16,7 +11,7 @@
 }
 
 #large-logo {
-  margin-left: 30%;
+  margin-left: 400px;
   margin-right: auto;
   margin-top: 40px;
 }
@@ -26,6 +21,13 @@
   margin-left: 10px;
   margin-top: 5px;
 }
+
+#small-logo:hover {
+  -webkit-transform: scale(1.08);
+-ms-transform: scale(1.08);
+transform: scale(1.08);
+}
+
 #nav {
   font-size: 20px;
   margin-top: 8px;
@@ -61,74 +63,140 @@ header {
   position: relative;
   top: 0px;
   left: 0px;
-  /*background-color: #A9C9A4;*/
+  height: 5em;
 }
 
 header li {
   display: inline;
 }
 
-
-/*#left, #middle, #right {
-  float: left;
-}*/
-
 #annapurna {
   width: 500px;
   margin-right: 10px;
+  margin-left: 190px;
+  border-radius: 8px;
+  border: 4px solid white ;
 }
 
 #tiger-mountain {
   width: 500px;
   margin-right: 10px;
+  border-radius: 8px;
+  border: 4px solid white ;
+  margin-left: 190px;
 }
 
 #arboretum {
+  width: 400px;
+  margin-right: 10px;
+  background-color: white;
+  opacity: .65;
+  border-radius: 8px;
+  border: 4px solid white;
+  margin-left: 190px;
+}
+
+/*#arboretum {
+  background-color: white;
+  opacity: .65;
+  width: 500px;
+  border-radius: 8px;
+  font-size: 18px;
+}*/
+
+#arboretum-image {
   width: 500px;
   margin-right: 10px;
+  border-radius: 8px;
+  border: 4px solid white;
+  margin-left: 190px;
 }
 
 #arboretum-equipment {
-  margin-top: 80px;
+  text-align: center;
 }
 
 #tiger-equipment {
-  margin-top: 142px;
+  text-align: center;
 }
 
 #annapurna-equipment {
-  margin-top: 78px;
+  text-align: center;
 }
 
 .no-dot-list {
   list-style-type: none;
 }
 
+.grow:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.grow-hover {
+  width:483px;
+  height:298px;
+  background:#676470;
+  transition:all 0.3s ease;
+}
+
 footer {
- /*background-color: #A9C9A4 ;*/
  position: absolute;
  bottom: 0px;
  width: 100%;
- background-color: rgba(0, 0, 0, 0.4);
+ height: 40px;
 }
 
 footer p {
+ color: #EDEDED;
  text-align: center;
  margin: 0% 2%;
  width: auto;
 }
 
 footer a {
- color: white;
+ color: #D1D1D1;
  text-decoration: none;
  text-align: center;
  margin: 0px;
  width: auto;
 }
 
+footer a:hover{
+  color: white;
+}
+
+html {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
+  height: 100%;
   font-family: "abel";
-  background-color: lightgrey;
+  width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+}
+
+.map-class {
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+  /*padding-top: 15px;*/
+  border: 4px solid white;
+  border-radius: 8px;
+}
+
+#wrapper {
+  box-sizing: border-box;
+  min-height: 100%;
+  position: relative;
+  padding: 0px 0px 40px;
+  width: 100%;
 }
 
 main {
@@ -141,23 +209,266 @@ main {
 
 h1, h2, h3 {
   font-family: "michroma";
+  text-align: center;
+}
+
+p, ul {
+  font-size: 17px;
 }
 
 div {
   float: left;
 }
 
-#left, #center {
-  border-radius: 25px;
-  border: 2px solid black;
-  padding-right: 50px;
+.question-text {
+  background-color: white;
+  opacity: .9;
+  border-radius: 8px;
+  padding: 6px 6px 6px 6px;
+}
+
+a.results-text {
+  position: fixed;
+  margin-top: 200px;
+  margin-left: -530px;
+  color: white;
+  background-color: seagreen;
+  text-decoration: none;
+}
+
+a.results-text:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  /*color: #2E2E2E;
+  background: white;*/
+}
+
+h1.question-text, h2.question-text {
+  border-radius: 8px;
+}
+
+.left:hover {
+  -webkit-transform: translateX(-4px);
+  transform: translateX(-4px);
+}
+
+.right:hover {
+  -webkit-transform: translateX(-4px);
+  transform: translateX(-4px);
+}
+
+.center:hover {
+  -webkit-transform: translateX(-4px);
+  transform: translateX(-4px);
+}
+
+.left, .center, .right {
   float: left;
   width: 250px;
 }
 
-#right {
-  border-radius: 25px;
-  border: 2px solid black;
+p.left.question-text, p.center.question-text, p.right.question-text {
+  font-size: 25px;
+}
+
+#left-div, #center-div, #right-div {
+  margin-right: 20px;
+  border-radius: 8px;
+  /*border: 2px solid white;*/
   float: left;
   width: 250px;
+}
+
+div#left-div.left {
+  margin-left: 5%;
+}
+
+.image-border {
+  border-radius: 8px;
+}
+
+.title {
+  padding: 6px 6px 10px 10px;
+  margin-right: auto;
+  background-color: white;
+  opacity: .85;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.results-text {
+  background-color: white;
+  opacity: .9;
+  border-radius: 8px;
+  padding: 50px 50px 50px 50px;
+}
+
+#about-title {
+  width: 420px;
+  margin-left: 39%;
+ }
+
+#arboretum-title {
+  margin-left: 30%;
+  width: 600px;
+}
+
+#west-tiger-title {
+  width: 320px;
+  margin-left: 40%;
+}
+
+#annapurna-title {
+  width: 550px;
+  margin-left: 30%;
+}
+
+.title-description {
+  padding: 6px 6px 10px 10px;
+  margin-right: auto;
+  margin-left: 16%;
+  background-color: white;
+  opacity: .65;
+  width: 750px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+#annapurna-title-description {
+  margin-left: 23%;
+}
+
+#arboretum-title-description {
+  margin-left: 23%;
+}
+
+#west-tiger-title-description {
+  margin-left: 23%;
+}
+
+
+.quick-facts {
+  padding: 3px 6px 10px 10px;
+  margin-right: auto;
+  margin-left: 10px;
+  background-color: white;
+  opacity: .65;
+  width: 500px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.quickfacts h3 {
+  text-align: center;
+}
+
+.quote {
+  padding: 0px 6px 10px 10px;
+  float: clear;
+  background-color: white;
+  opacity: .65;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 300px;
+  width: 700px;
+}
+
+#arboretum-equipment-div {
+  padding: 0px 6px 10px 10px;
+  float: clear;
+  background-color: white;
+  opacity: .65;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  /*margin-top: 20px;*/
+  /*margin-left: 300px;*/
+  width: 600px
+}
+
+/*background images*/
+#about-background {
+  background: url("img/mountain_cloud_background.jpg") no-repeat inline;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+}
+
+#question-background {
+  background: url("img-background/question-background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+}
+
+#annapurna-background {
+  background: url("img-background/results-background3.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  width: 100%;
+  min-width: 1024px;
+  height: auto;
+}
+
+#tiger-background {
+  background: url("img-background/results-background2.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+}
+
+#arboretum-background {
+  background: url("img-background/results-background1.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+}
+
+.blockquote{
+  font-size: 20px;
+}
+
+.bitmoji {
+  width: 300px;
+  margin-right: 15px;
+}
+
+#abs-bitmoji {
+  width: 300px;
+}
+
+#alex-bitmoji {
+  width: 300px;
+}
+
+#miguel-bitmoji {
+  width: 300px;
+}
+
+#steven-bitmoji {
+  width: 300px;
 }

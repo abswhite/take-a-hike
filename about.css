@@ -1,0 +1,324 @@
+/*#homepage {
+  background-image: url(img/homepage-background1.jpg);
+  background-size: 100% auto;
+}*/
+
+#hp-description {
+  background-color: white;
+  opacity: .70;
+  color: #383838;
+  border-radius: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: 22px;
+}
+
+#large-logo {
+  margin-left: 30%;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+#small-logo {
+  float: left;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+#small-logo:hover {
+  -webkit-transform: scale(1.08);
+-ms-transform: scale(1.08);
+transform: scale(1.08);
+}
+
+#nav {
+  font-size: 20px;
+  margin-top: 8px;
+  position: inline;
+  float: left;
+}
+
+nav a:hover {
+  color: white;
+  background: #2E2E2E	;
+}
+
+.nav-links {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #2E2E2E;
+  background-color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 8px;
+  padding-left: 8px;
+  hover: white;
+  border-radius: 8px;
+  opacity: .85;
+}
+
+.content {
+  float: clear;
+  font-family: "abel";
+}
+
+header {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  /*background-color: #A9C9A4;*/
+}
+
+header li {
+  display: inline;
+}
+
+
+.no-dot-list {
+  list-style-type: none;
+}
+
+
+.grow:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.grow-hover {
+  width:483px;
+  height:298px;
+  background:#676470;
+  transition:all 0.3s ease;
+}
+
+
+footer {
+ position: absolute;
+ bottom: 0px;
+ width: 100%;
+ height: 40px;
+}
+
+footer p {
+ color: white;
+ text-align: center;
+ margin: 0% 2%;
+ width: auto;
+ color: #EDEDED;
+}
+
+footer a {
+color: #EDEDED;
+ text-decoration: none;
+ text-align: center;
+ margin: 0px;
+ width: auto;
+}
+
+footer a:hover{
+  color: white;
+}
+
+html {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  height: 100%;
+  font-family: "abel";
+  /*background-color: darkgrey;*/
+  width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+}
+
+#wrapper {
+  box-sizing: border-box;
+  min-height: 100%;
+  position: relative;
+  padding: 0px 0px 40px;
+  width: 100%;
+}
+
+main {
+  text-align: center;
+  margin: auto;
+  max-width: 900px;
+  min-width: 450px;
+  padding: 0px;
+}
+
+h1, h2, h3 {
+  font-family: "michroma";
+  text-align: center;
+}
+
+p, ul {
+  font-size: 17px;
+}
+
+div {
+  float: left;
+}
+
+.question-text {
+  background-color: white;
+  opacity: .70;
+}
+
+.left, .center, .right {
+  float: left;
+  width: 250px;
+}
+
+#left-div, #center-div, #right-div {
+  border-radius: 25px;
+  border: 2px solid black;
+  float: left;
+  width: 250px;
+}
+
+.left:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.le-hover {
+  width:483px;
+  height:298px;
+  background:#676470;
+  transition:all 0.3s ease;
+}*/
+
+.image-border {
+  border-radius: 25px;
+}
+
+.title {
+  padding: 6px 6px 10px 10px;
+  margin-right: auto;
+  background-color: white;
+  opacity: .85;
+  border-radius: 8px;
+  text-align: center;
+}
+
+
+#about-title {
+  width: 420px;
+  margin-left: 39%;
+  color: black;
+}
+
+.title-description {
+  padding: 6px 6px 10px 10px;
+  margin-right: auto;
+  margin-left: 16%;
+  background-color: white;
+  opacity: .65;
+  width: 750px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+#annapurna-title-description {
+  margin-left: 23%;
+}
+
+#arboretum-title-description {
+  margin-left: 23%;
+}
+
+#west-tiger-title-description {
+  margin-left: 23%;
+}
+
+
+.quick-facts {
+  padding: 3px 6px 10px 10px;
+  margin-right: auto;
+  margin-left: 10px;
+  background-color: white;
+  opacity: .65;
+  width: 500px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.quickfacts h3 {
+  text-align: center;
+}
+
+.quote {
+  padding: 0px 6px 10px 10px;
+  float: clear;
+  background-color: white;
+  opacity: .65;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 300px;
+  width: 700px;
+}
+
+
+#about-background {
+  background: url("img/mountain_cloud_background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.bitmoji {
+  width: 300px;
+  margin-right: 15px;
+  /*border: 1px solid black;*/
+}
+
+.name {
+  background-color: white;
+  opacity: .55;
+  padding: 6px 6px 6px 6px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.name1 {
+  background-color: white;
+  opacity: .8;
+  padding: 6px 6px 6px 6px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.bold {
+  font-family: "michroma";
+  text-align: center;
+}
+
+#abs-bitmoji {
+  width: 300px;
+}
+
+#alex-bitmoji {
+  width: 300px;
+}
+
+#miguel-bitmoji {
+  width: 300px;
+}
+
+#steven-bitmoji {
+  width: 300px;
+}
