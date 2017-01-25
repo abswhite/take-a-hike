@@ -23,9 +23,9 @@
 }
 
 #small-logo:hover {
-  -webkit-transform: scale(1.3);
--ms-transform: scale(1.3);
-transform: scale(1.3);
+  -webkit-transform: scale(1.08);
+-ms-transform: scale(1.08);
+transform: scale(1.08);
 }
 
 #nav {
