@@ -87,10 +87,28 @@ header li {
 }
 
 #arboretum {
+  width: 400px;
+  margin-right: 10px;
+  background-color: white;
+  opacity: .65;
+  border-radius: 8px;
+  border: 4px solid white;
+  margin-left: 190px;
+}
+
+/*#arboretum {
+  background-color: white;
+  opacity: .65;
+  width: 500px;
+  border-radius: 8px;
+  font-size: 18px;
+}*/
+
+#arboretum-image {
   width: 500px;
   margin-right: 10px;
   border-radius: 8px;
-  border: 4px solid white ;
+  border: 4px solid white;
   margin-left: 190px;
 }
 
@@ -165,10 +183,11 @@ body {
 }
 
 .map-class {
-  display: block;
+  display: inline;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 15px;
+  /*padding-top: 15px;*/
+  border: 4px solid white;
   border-radius: 8px;
 }
 
@@ -350,6 +369,18 @@ div#left-div.left {
   margin-top: 20px;
   margin-left: 300px;
   width: 700px;
+}
+
+#arboretum-equipment-div {
+  padding: 0px 6px 10px 10px;
+  float: clear;
+  background-color: white;
+  opacity: .65;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  /*margin-top: 20px;*/
+  /*margin-left: 300px;*/
+  width: 600px
 }
 
 /*background images*/
