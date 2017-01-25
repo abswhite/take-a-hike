@@ -8,6 +8,9 @@ var clickCounter = 0;
 var easyHikeCounter = 0;
 var mediumHikeCounter = 0;
 var hardHikeCounter = 0;
+var totalEasyHikeCounter = 0;
+var totalMediumHikeCounter = 0;
+var totalHardHikeCounter = 0;
 var counters = [];
 
 var questions = ['What level of difficulty are you looking for in a hike?', 'How do you feel about dogs and kids?', 'How much elevation gain are you willing to climb?', 'Which region do you prefer?', 'Which hiking movie did you like best?', 'If you HAD to choose, how would you rather die?', 'Do you require a spectacular view?', 'Are you looking for a hike with a lake, river, or waterfall?', 'Would you have cut off your arm? (ie; 127 hours, Aron Ralston)', ' Are you opposed to paying for parking?'];
@@ -120,10 +123,9 @@ function renderResult() {
 
 function getLocalStorage() {
   if (localStorage.length > 0) {
-    clickCounter = JSON.parse(localStorage.getItem('clickCounter'));
-    easyHikeCounter = JSON.parse(localStorage.getItem('easyHikeCounter'));
-    mediumHikeCounter = JSON.parse(localStorage.getItem('mediumHikeCounter'));
-    hardHikeCounter = JSON.parse(localStorage.getItem('hardHikeCounter'));
+    totalEasyHikeCounter = JSON.parse(localStorage.getItem('totalEasyHikeCounter'));
+    totalMediumHikeCounter = JSON.parse(localStorage.getItem('totalMediumHikeCounter'));
+    totalHardHikeCounter = JSON.parse(localStorage.getItem('totalHardHikeCounter'));
   }
 }
 
@@ -136,10 +138,13 @@ function onClickResponse(event) {
 
   if (event.target.getAttribute('class').split(' ')[0] === 'left') {
     easyHikeCounter++;
+    totalEasyHikeCounter++;
   } else if (event.target.getAttribute('class').split(' ')[0] === 'center') {
     mediumHikeCounter++;
+    totalMediumHikeCounter++;
   } else {
     hardHikeCounter++;
+    totalHardHikeCounter++;
   }
 
   if(clickCounter < 10) {
@@ -149,10 +154,9 @@ function onClickResponse(event) {
     divCenterEl.addEventListener('click', onClickResponse, false);
     divRightEl.addEventListener('click', onClickResponse, false);
   } else {
-    localStorage.setItem('clickCounter', JSON.stringify(clickCounter));
-    localStorage.setItem('easyHikeCounter', JSON.stringify(easyHikeCounter));
-    localStorage.setItem('mediumHikeCounter', JSON.stringify(mediumHikeCounter));
-    localStorage.setItem('hardHikeCounter', JSON.stringify(hardHikeCounter));
+    localStorage.setItem('totalEasyHikeCounter', JSON.stringify(totalEasyHikeCounter));
+    localStorage.setItem('totalMediumHikeCounter', JSON.stringify(totalMediumHikeCounter));
+    localStorage.setItem('totalHardHikeCounter', JSON.stringify(totalHardHikeCounter));
 
     counters.push(easyHikeCounter);
     counters.push(mediumHikeCounter);
