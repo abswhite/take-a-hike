@@ -176,7 +176,6 @@ html {
 body {
   height: 100%;
   font-family: "abel";
-  /*background-color: darkgrey;*/
   width: 1300px;
   margin-left: auto;
   margin-right: auto;
@@ -198,37 +197,6 @@ body {
   position: relative;
   padding: 0px 0px 40px;
   width: 100%;
-}
-
-.results-background1 {
-  background-image: url(img-background/results-background1.jpg);
-  background-attachment: fixed;
-  /*opacity: .5;*/
-  background-size: 100%;
-  background-repeat: repeat-y;
-}
-
-.results-background2 {
-  background-image: url(img-background/results-background2.jpg);
-  background-attachment: fixed;
-  /*opacity: .5;*/
-  background-size: 100%;
-  background-repeat: repeat-y;
-}
-
-.results-background3 {
-  background-image: url(img-background/results-background3.jpg);
-  background-attachment: fixed;
-  /*opacity: .5;*/
-  background-size: 100%;
-  background-repeat: repeat-y;
-}
-
-.question-background {
-  background-image: url(img-background/question-background.jpg);
-  background-attachment: fixed;
-  background-size: 100%;
-  background-repeat: repeat-y;
 }
 
 main {
@@ -403,12 +371,65 @@ div#left-div.left {
   width: 700px;
 }
 
+/*background images*/
 #about-background {
-  background: url("img/mountain_cloud_background.jpg") no-repeat center center fixed;
+  background: url("img/mountain_cloud_background.jpg") no-repeat inline;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+}
+
+#question-background {
+  background: url("img-background/question-background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+}
+
+#annapurna-background {
+  background: url("img-background/results-background3.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  width: 100%;
+  min-width: 1024px;
+  height: auto;
+}
+
+#tiger-background {
+  background: url("img-background/results-background2.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+}
+
+#arboretum-background {
+  background: url("img-background/results-background1.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
 }
 
 .blockquote{
