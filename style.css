@@ -54,9 +54,12 @@ nav a:hover {
   opacity: .85;
 }
 
-.content {
-  float: clear;
+div.content {
+  /*float: clear;*/
   font-family: "abel";
+  width: 80%;
+  margin: 0 auto;
+  /*display: inline-block;*/
 }
 
 header {
@@ -72,28 +75,26 @@ header li {
 
 #annapurna {
   width: 500px;
-  margin-right: 10px;
-  margin-left: 190px;
+  margin: 0 auto;
   border-radius: 8px;
   border: 4px solid white ;
+
 }
 
 #tiger-mountain {
   width: 500px;
-  margin-right: 10px;
+  margin: 0 auto;
   border-radius: 8px;
   border: 4px solid white ;
-  margin-left: 190px;
 }
 
 #arboretum {
   width: 400px;
-  margin-right: 10px;
+  margin: 0 auto;
   background-color: white;
   opacity: .65;
   border-radius: 8px;
   border: 4px solid white;
-  margin-left: 190px;
 }
 
 /*#arboretum {
@@ -106,10 +107,9 @@ header li {
 
 #arboretum-image {
   width: 500px;
-  margin-right: 10px;
+  margin-left: 190px;
   border-radius: 8px;
   border: 4px solid white;
-  margin-left: 190px;
 }
 
 #arboretum-equipment {
@@ -216,9 +216,9 @@ p, ul {
   font-size: 17px;
 }
 
-div {
+/*div {
   float: left;
-}
+}*/
 
 .question-text {
   background-color: white;
@@ -290,7 +290,7 @@ div#left-div.left {
 
 .title {
   padding: 6px 6px 10px 10px;
-  margin-right: auto;
+  margin:0 auto;
   background-color: white;
   opacity: .85;
   border-radius: 8px;
@@ -310,24 +310,23 @@ div#left-div.left {
  }
 
 #arboretum-title {
-  margin-left: 30%;
+  margin: 0 auto;
   width: 600px;
 }
 
 #west-tiger-title {
   width: 320px;
-  margin-left: 40%;
+  margin: 0 auto;
 }
 
 #annapurna-title {
   width: 550px;
-  margin-left: 30%;
+  margin: 0 auto;
 }
 
 .title-description {
   padding: 6px 6px 10px 10px;
-  margin-right: auto;
-  margin-left: 16%;
+  margin: 0 auto;
   background-color: white;
   opacity: .65;
   width: 750px;
@@ -336,22 +335,21 @@ div#left-div.left {
 }
 
 #annapurna-title-description {
-  margin-left: 23%;
+  margin: 0 auto;
 }
 
 #arboretum-title-description {
-  margin-left: 23%;
+  margin: 0 auto;
 }
 
 #west-tiger-title-description {
-  margin-left: 23%;
+  margin: 0 auto;
 }
 
 
 .quick-facts {
   padding: 3px 6px 10px 10px;
-  margin-right: auto;
-  margin-left: 10px;
+  margin: 0 auto;
   background-color: white;
   opacity: .65;
   width: 500px;
@@ -365,23 +363,24 @@ div#left-div.left {
 
 .quote {
   padding: 0px 6px 10px 10px;
-  float: clear;
+  /*float: clear;*/
   background-color: white;
   opacity: .65;
   border-radius: 8px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  margin-left: 300px;
+  /*margin-bottom: 20px;
+  margin-top: 20px;*/
+  margin: 0 auto;
   width: 700px;
 }
 
 #arboretum-equipment-div {
   padding: 0px 6px 10px 10px;
-  float: clear;
+  /*float: clear;*/
   background-color: white;
   opacity: .65;
   border-radius: 8px;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
+  margin: 0 auto;
   /*margin-top: 20px;*/
   /*margin-left: 300px;*/
   width: 600px
