@@ -25,6 +25,12 @@
   font-size: 45px;
 }
 
+#begin:hover {
+  color: white;
+  background: #2E2E2E;
+  border: none;
+}
+
 #hp-description {
   background-color: white;
   opacity: .70;
@@ -101,6 +107,12 @@ nav a:hover {
   border-radius: 8px;
   opacity: .85;
 }
+
+/*li:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}*/
 
 .content {
   float: clear;
