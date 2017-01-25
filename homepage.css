@@ -12,7 +12,7 @@
 
 #begin {
   margin-right: auto;
-  margin-left: 47%;
+  margin-left: auto;
   text-decoration: none;
   color: #2E2E2E;
   background-color: white;
@@ -38,9 +38,10 @@
 }
 
 #large-logo {
-  margin-left: 30%;
+  margin-left: auto;
   margin-right: auto;
   margin-top: 5%;
+  display: block;
 }
 
 #small-logo {
@@ -60,6 +61,13 @@ transform: scale(1.08);
   margin-top: 8px;
   position: inline;
   float: left;
+}
+
+section div.grow {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .grow:hover {
@@ -114,6 +122,7 @@ footer {
  position: absolute;
  bottom: 0px;
  width: 100%;
+ min-width: 1300px;
 }
 
 footer p {
@@ -140,19 +149,27 @@ body {
   color: white;
   margin-right: auto;
   margin-left: auto;
-  width: 1300px;
+  min-width: 1300px;
 
+}
+
+section {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1, h3{
   font-family: "michroma";
   width: 400px;
-  margin-left: 36%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
 p{
   width: 400px;
-  margin-left: 36%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
