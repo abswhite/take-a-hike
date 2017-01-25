@@ -118,6 +118,15 @@ function renderResult() {
   mainEl.appendChild(h1El);
 }
 
+function getLocalStorage() {
+  if (localStorage.length > 0) {
+    clickCounter = JSON.parse(localStorage.getItem('clickCounter'));
+    easyHikeCounter = JSON.parse(localStorage.getItem('easyHikeCounter'));
+    mediumHikeCounter = JSON.parse(localStorage.getItem('mediumHikeCounter'));
+    hardHikeCounter = JSON.parse(localStorage.getItem('hardHikeCounter'));
+  }
+}
+
 function onClickResponse(event) {
   event.preventDefault();
   event.stopPropagation();
@@ -140,6 +149,11 @@ function onClickResponse(event) {
     divCenterEl.addEventListener('click', onClickResponse, false);
     divRightEl.addEventListener('click', onClickResponse, false);
   } else {
+    localStorage.setItem('clickCounter', JSON.stringify(clickCounter));
+    localStorage.setItem('easyHikeCounter', JSON.stringify(easyHikeCounter));
+    localStorage.setItem('mediumHikeCounter', JSON.stringify(mediumHikeCounter));
+    localStorage.setItem('hardHikeCounter', JSON.stringify(hardHikeCounter));
+
     counters.push(easyHikeCounter);
     counters.push(mediumHikeCounter);
     counters.push(hardHikeCounter);
@@ -149,6 +163,7 @@ function onClickResponse(event) {
 }
 
 createImages();
+getLocalStorage();
 displayQuestion(0);
 
 divLeftEl.addEventListener('click', onClickResponse, false);
