@@ -161,7 +161,6 @@ p, ul {
 
 div {
   float: left;
-  width: 250px;
 }
 
 .question-text {
@@ -171,6 +170,7 @@ div {
 
 .left, .center, .right {
   float: left;
+  width: 250px;
 }
 
 #left-div, #center-div, #right-div {
@@ -179,6 +179,19 @@ div {
   float: left;
   width: 250px;
 }
+
+.left:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.le-hover {
+  width:483px;
+  height:298px;
+  background:#676470;
+  transition:all 0.3s ease;
+}*/
 
 .image-border {
   border-radius: 25px;
