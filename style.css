@@ -158,7 +158,6 @@ html {
 body {
   height: 100%;
   font-family: "abel";
-  /*background-color: darkgrey;*/
   width: 1300px;
   margin-left: auto;
   margin-right: auto;
@@ -353,9 +352,9 @@ div#left-div.left {
   width: 700px;
 }
 
-/**/background images
+/*background images*/
 #about-background {
-  background: url("img/mountain_cloud_background.jpg") no-repeat center center fixed;
+  background: url("img/mountain_cloud_background.jpg") no-repeat inline;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
