@@ -68,6 +68,7 @@ header {
   position: relative;
   top: 0px;
   left: 0px;
+  height: 5em;
   /*background-color: #A9C9A4;*/
 }
 
@@ -96,26 +97,27 @@ header li {
 
 
 footer {
- position: absolute;
- bottom: 0px;
- width: 100%;
- height: 40px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 footer p {
- color: white;
- text-align: center;
- margin: 0% 2%;
- width: auto;
- color: #EDEDED;
+  color: white;
+  text-align: center;
+  margin: 0% 2%;
+  width: auto;
+  color: #EDEDED;
 }
 
 footer a {
-color: #EDEDED;
- text-decoration: none;
- text-align: center;
- margin: 0px;
- width: auto;
+  color: #EDEDED;
+  text-decoration: none;
+  text-align: center;
+  margin: 0px;
+  width: auto;
 }
 
 footer a:hover{
@@ -133,8 +135,7 @@ body {
   font-family: "abel";
   /*background-color: darkgrey;*/
   width: 1300px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding: 0px;
 }
 
@@ -142,7 +143,7 @@ body {
   box-sizing: border-box;
   min-height: 100%;
   position: relative;
-  padding: 0px 0px 40px;
+  padding: 0px 0px 45px;
   width: 100%;
 }
 
