@@ -11,7 +11,7 @@
 }
 
 #large-logo {
-  margin-left: 30%;
+  margin-left: 400px;
   margin-right: auto;
   margin-top: 40px;
 }
@@ -127,22 +127,25 @@ footer {
  bottom: 0px;
  width: 100%;
  height: 40px;
- background-color: rgba(0, 0, 0, 0.4);
 }
 
 footer p {
- color: white;
+ color: #EDEDED;
  text-align: center;
  margin: 0% 2%;
  width: auto;
 }
 
 footer a {
- color: white;
+ color: #D1D1D1;
  text-decoration: none;
  text-align: center;
  margin: 0px;
  width: auto;
+}
+
+footer a:hover{
+  color: white;
 }
 
 html {
