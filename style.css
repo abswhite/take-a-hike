@@ -371,6 +371,18 @@ div#left-div.left {
   width: 700px;
 }
 
+#arboretum-equipment-div {
+  padding: 0px 6px 10px 10px;
+  float: clear;
+  background-color: white;
+  opacity: .65;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  /*margin-top: 20px;*/
+  /*margin-left: 300px;*/
+  width: 600px
+}
+
 /*background images*/
 #about-background {
   background: url("img/mountain_cloud_background.jpg") no-repeat inline;
