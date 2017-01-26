@@ -54,11 +54,11 @@ nav a:hover {
   opacity: .85;
 }
 
-.content {
-  width: 1500px;
-  margin-left: auto;
-  margin-right: auto;
+div.content {
   font-family: "abel";
+  width: 80%;
+  margin: 0 auto;
+  /*display: inline-block;*/
 }
 
 header {
@@ -73,45 +73,42 @@ header li {
 }
 
 #annapurna {
-  width: 500px;
-  margin-right: 10px;
-  margin-left: 190px;
+  width: 591px;
+  margin: 0 auto;
   border-radius: 8px;
   border: 4px solid white ;
+  vertical-align: top;
 }
 
 #tiger-mountain {
-  width: 500px;
-  margin-right: 10px;
+  width: 591px;
+  margin: 0 8px;
   border-radius: 8px;
-  border: 4px solid white ;
-  margin-left: 190px;
+  border: 4px solid white;
+  vertical-align: top;
 }
 
 #arboretum {
-  width: 400px;
-  margin-right: 10px;
-  background-color: white;
-  opacity: .65;
+  width: 497px;
+  margin: 0 8px;
   border-radius: 8px;
   border: 4px solid white;
-  margin-left: 190px;
+  vertical-align: top;
 }
 
-/*#arboretum {
-  background-color: white;
-  opacity: .65;
-  width: 500px;
-  border-radius: 8px;
-  font-size: 18px;
-}*/
+#tiger-img-map {
+  width:1240px;
+  margin: 15px auto;
+}
 
-#arboretum-image {
-  width: 500px;
-  margin-right: 10px;
-  border-radius: 8px;
-  border: 4px solid white;
-  margin-left: 190px;
+#arbor-img-map {
+  width:1046px;
+  margin: 15px auto;
+}
+
+#anna-img-map {
+  width:1240px;
+  margin: 15px auto;
 }
 
 #arboretum-equipment {
@@ -124,6 +121,21 @@ header li {
 
 #annapurna-equipment {
   text-align: center;
+}
+
+#arbor-facts-equipment {
+  width: 1045px;
+  margin: 15px auto;
+}
+
+#tiger-facts-equipment {
+  width: 1045px;
+  margin: 15px auto;
+}
+
+#anna-facts-equipment {
+  width: 1045px;
+  margin: 15px auto;
 }
 
 .no-dot-list {
@@ -186,8 +198,7 @@ body {
 
 .map-class {
   display: inline;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 8px;
   /*padding-top: 15px;*/
   border: 4px solid white;
   border-radius: 8px;
@@ -216,10 +227,6 @@ h1, h2, h3 {
 
 p, ul {
   font-size: 17px;
-}
-
-div {
-  display: inline;
 }
 
 .question-text {
@@ -292,7 +299,7 @@ div#left-div.left {
 
 .title {
   padding: 6px 6px 10px 10px;
-  margin-right: auto;
+  margin:0 auto;
   background-color: white;
   opacity: .85;
   border-radius: 8px;
@@ -312,24 +319,23 @@ div#left-div.left {
  }
 
 #arboretum-title {
-  margin-left: 30%;
+  margin: 15px auto;
   width: 600px;
 }
 
 #west-tiger-title {
   width: 320px;
-  margin-left: 40%;
+  margin: 15px auto;
 }
 
 #annapurna-title {
   width: 550px;
-  margin-left: 30%;
+  margin: 15px auto;
 }
 
 .title-description {
   padding: 6px 6px 10px 10px;
-  margin-right: auto;
-  margin-left: 16%;
+  margin: 0 auto;
   background-color: white;
   opacity: .65;
   width: 750px;
@@ -338,52 +344,74 @@ div#left-div.left {
 }
 
 #annapurna-title-description {
-  margin-left: 23%;
+  margin: 15px auto;
 }
 
 #arboretum-title-description {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 15px auto;
 }
 
 #west-tiger-title-description {
-  margin-left: 23%;
+  margin: 15px auto;
 }
-
 
 .quick-facts {
   padding: 3px 6px 10px 10px;
-  margin-right: auto;
-  margin-left: 190px;
+  margin: 0 8px;
   background-color: white;
   opacity: .65;
   width: 495px;
   border-radius: 8px;
   font-size: 18px;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .quote {
   padding: 0px 6px 10px 10px;
-  float: clear;
   background-color: white;
   opacity: .65;
   border-radius: 8px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  margin-left: 300px;
+  margin: 0 8px;
+  width: 474px;
+  display:inline-block;
+}
+
+#quote-mortality {
+  width: 1019px;
+  margin: 15px auto;
+  position: relative;
+  bottom: 152px;
+}
+
+.equipment {
+  padding: 0px 6px 10px 10px;
+  background-color: white;
+  opacity: .65;
+  border-radius: 8px;
+  margin: 0 8px;
+  width: 474px;
+  display:inline-block;
+}
+
+.reading {
+  padding: 0px 6px 10px 10px;
+  background-color: white;
+  opacity: .65;
+  border-radius: 8px;
+  margin: 15px auto 15px auto;
   width: 700px;
 }
 
-#arboretum-equipment-div {
+#anna-reading {
   padding: 0px 6px 10px 10px;
-  float: clear;
   background-color: white;
   opacity: .65;
   border-radius: 8px;
-  margin-bottom: 20px;
-  /*margin-top: 20px;*/
-  /*margin-left: 300px;*/
-  width: 600px
+  margin: 15px auto 15px auto;
+  width: 700px;
+  position: relative;
+  bottom: 119px;
 }
 
 /*background images*/
