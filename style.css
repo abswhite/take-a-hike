@@ -1,8 +1,3 @@
-#homepage {
-  background-image: url(img/homepage-background1.jpg);
-  background-size: 100% auto;
-}
-
 #hp-description {
   background-color: white;
   opacity: .70;
@@ -16,7 +11,7 @@
 }
 
 #large-logo {
-  margin-left: 30%;
+  margin-left: 400px;
   margin-right: auto;
   margin-top: 40px;
 }
@@ -26,6 +21,13 @@
   margin-left: 10px;
   margin-top: 5px;
 }
+
+#small-logo:hover {
+  -webkit-transform: scale(1.08);
+-ms-transform: scale(1.08);
+transform: scale(1.08);
+}
+
 #nav {
   font-size: 20px;
   margin-top: 8px;
@@ -52,83 +54,162 @@ nav a:hover {
   opacity: .85;
 }
 
-.content {
-  float: clear;
+div.content {
   font-family: "abel";
+  width: 80%;
+  margin: 0 auto;
+  /*display: inline-block;*/
 }
 
 header {
   position: relative;
   top: 0px;
   left: 0px;
-  /*background-color: #A9C9A4;*/
+  height: 5em;
 }
 
 header li {
   display: inline;
 }
 
-
-/*#left, #middle, #right {
-  float: left;
-}*/
-
 #annapurna {
-  width: 500px;
-  margin-right: 10px;
+  width: 591px;
+  margin: 0 auto;
+  border-radius: 8px;
+  border: 4px solid white ;
+  vertical-align: top;
 }
 
 #tiger-mountain {
-  width: 500px;
-  margin-right: 10px;
+  width: 591px;
+  margin: 0 8px;
+  border-radius: 8px;
+  border: 4px solid white;
+  vertical-align: top;
 }
 
 #arboretum {
-  width: 500px;
-  margin-right: 10px;
+  width: 497px;
+  margin: 0 8px;
+  border-radius: 8px;
+  border: 4px solid white;
+  vertical-align: top;
+}
+
+#tiger-img-map {
+  width:1240px;
+  margin: 15px auto;
+}
+
+#arbor-img-map {
+  width:1046px;
+  margin: 15px auto;
+}
+
+#anna-img-map {
+  width:1240px;
+  margin: 15px auto;
 }
 
 #arboretum-equipment {
-  margin-top: 80px;
+  text-align: center;
 }
 
 #tiger-equipment {
-  margin-top: 142px;
+  text-align: center;
 }
 
 #annapurna-equipment {
-  margin-top: 78px;
+  text-align: center;
+}
+
+#arbor-facts-equipment {
+  width: 1045px;
+  margin: 15px auto;
+}
+
+#tiger-facts-equipment {
+  width: 1045px;
+  margin: 15px auto;
+}
+
+#anna-facts-equipment {
+  width: 1045px;
+  margin: 15px auto;
 }
 
 .no-dot-list {
   list-style-type: none;
 }
 
+.grow:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.grow-hover {
+  width:483px;
+  height:298px;
+  background:#676470;
+  transition:all 0.3s ease;
+}
+
 footer {
- /*background-color: #A9C9A4 ;*/
  position: absolute;
  bottom: 0px;
  width: 100%;
+ height: 45px;
  background-color: rgba(0, 0, 0, 0.4);
 }
 
 footer p {
+ color: #EDEDED;
  text-align: center;
  margin: 0% 2%;
  width: auto;
 }
 
 footer a {
- color: white;
+ color: #D1D1D1;
  text-decoration: none;
  text-align: center;
  margin: 0px;
  width: auto;
 }
 
+footer a:hover{
+  color: white;
+}
+
+html {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
+  height: 100%;
   font-family: "abel";
-  background-color: lightgrey;
+  min-width: 1300px;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.map-class {
+  display: inline;
+  margin: 0 8px;
+  /*padding-top: 15px;*/
+  border: 4px solid white;
+  border-radius: 8px;
+}
+
+#wrapper {
+  box-sizing: border-box;
+  min-height: 100%;
+  position: relative;
+  padding: 0px 0px 45px;
+  width: 100%;
 }
 
 main {
@@ -141,23 +222,269 @@ main {
 
 h1, h2, h3 {
   font-family: "michroma";
+  text-align: center;
 }
 
-div {
-  float: left;
+p, ul {
+  font-size: 17px;
 }
 
-#left, #center {
-  border-radius: 25px;
-  border: 2px solid black;
-  padding-right: 50px;
+.question-text {
+  background-color: white;
+  opacity: .9;
+  border-radius: 8px;
+  padding: 6px 6px 6px 6px;
+}
+
+a.results-text {
+  position: fixed;
+  margin-top: 200px;
+  margin-left: -530px;
+  color: white;
+  background-color: seagreen;
+  text-decoration: none;
+}
+
+a.results-text:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  /*color: #2E2E2E;
+  background: white;*/
+}
+
+h1.question-text, h2.question-text {
+  border-radius: 8px;
+}
+
+.left:hover {
+  -webkit-transform: translateX(-4px);
+  transform: translateX(-4px);
+}
+
+.right:hover {
+  -webkit-transform: translateX(-4px);
+  transform: translateX(-4px);
+}
+
+.center:hover {
+  -webkit-transform: translateX(-4px);
+  transform: translateX(-4px);
+}
+
+.left, .center, .right {
   float: left;
   width: 250px;
 }
 
-#right {
-  border-radius: 25px;
-  border: 2px solid black;
+p.left.question-text, p.center.question-text, p.right.question-text {
+  font-size: 25px;
+}
+
+#left-div, #center-div, #right-div {
+  margin-right: 20px;
+  border-radius: 8px;
+  /*border: 2px solid white;*/
   float: left;
   width: 250px;
+}
+
+div#left-div.left {
+  margin-left: 5%;
+}
+
+.image-border {
+  border-radius: 8px;
+}
+
+.title {
+  padding: 6px 6px 10px 10px;
+  margin:0 auto;
+  background-color: white;
+  opacity: .85;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.results-text {
+  background-color: white;
+  opacity: .9;
+  border-radius: 8px;
+  padding: 50px 50px 50px 50px;
+}
+
+#about-title {
+  width: 420px;
+  margin-left: 39%;
+ }
+
+#arboretum-title {
+  margin: 15px auto;
+  width: 600px;
+}
+
+#west-tiger-title {
+  width: 320px;
+  margin: 15px auto;
+}
+
+#annapurna-title {
+  width: 550px;
+  margin: 15px auto;
+}
+
+.title-description {
+  padding: 6px 6px 10px 10px;
+  margin: 0 auto;
+  background-color: white;
+  opacity: .65;
+  width: 750px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+#annapurna-title-description {
+  margin: 15px auto;
+}
+
+#arboretum-title-description {
+  margin: 15px auto;
+}
+
+#west-tiger-title-description {
+  margin: 15px auto;
+}
+
+.quick-facts {
+  padding: 3px 6px 10px 10px;
+  margin: 0 8px;
+  background-color: white;
+  opacity: .65;
+  width: 495px;
+  border-radius: 8px;
+  font-size: 18px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.quote {
+  padding: 0px 6px 10px 10px;
+  background-color: white;
+  opacity: .65;
+  border-radius: 8px;
+  margin: 0 8px;
+  width: 474px;
+  display:inline-block;
+}
+
+#quote-mortality {
+  width: 1019px;
+  margin: 15px auto;
+  position: relative;
+  bottom: 152px;
+}
+
+.equipment {
+  padding: 0px 6px 10px 10px;
+  background-color: white;
+  opacity: .65;
+  border-radius: 8px;
+  margin: 0 8px;
+  width: 474px;
+  display:inline-block;
+}
+
+.reading {
+  padding: 0px 6px 10px 10px;
+  background-color: white;
+  opacity: .65;
+  border-radius: 8px;
+  margin: 15px auto 15px auto;
+  width: 700px;
+}
+
+#anna-reading {
+  padding: 0px 6px 10px 10px;
+  background-color: white;
+  opacity: .65;
+  border-radius: 8px;
+  margin: 15px auto 15px auto;
+  width: 700px;
+  position: relative;
+  bottom: 119px;
+}
+
+/*background images*/
+
+#question-background {
+  background: url("img-background/question-background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: 100%;
+}
+
+#annapurna-background {
+  background: url("img-background/results-background3.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  width: 100%;
+  min-width: 1024px;
+  height: 100%;
+}
+
+#tiger-background {
+  background: url("img-background/results-background2.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: 100%;
+}
+
+#arboretum-background {
+  background: url("img-background/results-background1.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: 100%;
+}
+
+.blockquote{
+  font-size: 20px;
+}
+
+.bitmoji {
+  width: 300px;
+  margin-right: 15px;
+}
+
+#abs-bitmoji {
+  width: 300px;
+}
+
+#alex-bitmoji {
+  width: 300px;
+}
+
+#miguel-bitmoji {
+  width: 300px;
+}
+
+#steven-bitmoji {
+  width: 300px;
 }
