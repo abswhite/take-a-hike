@@ -55,7 +55,9 @@ nav a:hover {
 }
 
 .content {
-  float: clear;
+  width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "abel";
 }
 
@@ -217,7 +219,7 @@ p, ul {
 }
 
 div {
-  float: left;
+  display: inline;
 }
 
 .question-text {
@@ -340,7 +342,8 @@ div#left-div.left {
 }
 
 #arboretum-title-description {
-  margin-left: 23%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #west-tiger-title-description {
@@ -351,16 +354,12 @@ div#left-div.left {
 .quick-facts {
   padding: 3px 6px 10px 10px;
   margin-right: auto;
-  margin-left: 10px;
+  margin-left: 190px;
   background-color: white;
   opacity: .65;
-  width: 500px;
+  width: 495px;
   border-radius: 8px;
   font-size: 18px;
-}
-
-.quickfacts h3 {
-  text-align: center;
 }
 
 .quote {
