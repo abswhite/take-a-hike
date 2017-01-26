@@ -378,7 +378,10 @@ div#left-div.left {
 }
 
 #quote-mortality {
-  
+  width: 1019px;
+  margin: 15px auto;
+  position: relative;
+  bottom: 152px;
 }
 
 .equipment {
@@ -393,28 +396,23 @@ div#left-div.left {
 
 .reading {
   padding: 0px 6px 10px 10px;
-  /*float: clear;*/
   background-color: white;
   opacity: .65;
   border-radius: 8px;
-  /*margin-bottom: 20px;
-  margin-top: 20px;*/
   margin: 15px auto 15px auto;
   width: 700px;
 }
 
-/*#arboretum-equipment-div {
+#anna-reading {
   padding: 0px 6px 10px 10px;
-  float: clear;
   background-color: white;
   opacity: .65;
   border-radius: 8px;
-  margin-bottom: 20px;
-  margin: 0 auto;
-  margin-top: 20px;
-  margin-left: 300px;
-  width: 600px*/
-/*}*/
+  margin: 15px auto 15px auto;
+  width: 700px;
+  position: relative;
+  bottom: 119px;
+}
 
 /*background images*/
 
