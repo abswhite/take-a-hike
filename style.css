@@ -106,6 +106,11 @@ header li {
   margin: 15px auto;
 }
 
+#anna-img-map {
+  width:1240px;
+  margin: 15px auto;
+}
+
 #arboretum-equipment {
   text-align: center;
 }
@@ -124,6 +129,11 @@ header li {
 }
 
 #tiger-facts-equipment {
+  width: 1045px;
+  margin: 15px auto;
+}
+
+#anna-facts-equipment {
   width: 1045px;
   margin: 15px auto;
 }
@@ -309,7 +319,7 @@ div#left-div.left {
  }
 
 #arboretum-title {
-  margin: 0 auto;
+  margin: 15px auto;
   width: 600px;
 }
 
@@ -334,7 +344,7 @@ div#left-div.left {
 }
 
 #annapurna-title-description {
-  margin: 0 auto;
+  margin: 15px auto;
 }
 
 #arboretum-title-description {
@@ -358,6 +368,16 @@ div#left-div.left {
 }
 
 .quote {
+  padding: 0px 6px 10px 10px;
+  background-color: white;
+  opacity: .65;
+  border-radius: 8px;
+  margin: 0 8px;
+  width: 474px;
+  display:inline-block;
+}
+
+.equipment {
   padding: 0px 6px 10px 10px;
   background-color: white;
   opacity: .65;
