@@ -55,7 +55,6 @@ nav a:hover {
 }
 
 div.content {
-  /*float: clear;*/
   font-family: "abel";
   width: 80%;
   margin: 0 auto;
@@ -220,10 +219,6 @@ p, ul {
   font-size: 17px;
 }
 
-/*div {
-  float: left;
-}*/
-
 .question-text {
   background-color: white;
   opacity: .9;
@@ -355,15 +350,11 @@ div#left-div.left {
   margin: 0 8px;
   background-color: white;
   opacity: .65;
-  width: 500px;
+  width: 495px;
   border-radius: 8px;
   font-size: 18px;
   display: inline-block;
   vertical-align: top;
-}
-
-.quickfacts h3 {
-  text-align: center;
 }
 
 .quote {
