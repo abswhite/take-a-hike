@@ -1,7 +1,14 @@
-/*#homepage {
-  background-image: url(img/homepage-background1.jpg);
-  background-size: 100% auto;
-}*/
+#about-background {
+  background: url("img/mountain_cloud_background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: 100%;
+}
 
 .about-icon {
   margin-left: 85px;
@@ -271,16 +278,6 @@ div {
   margin-left: 300px;
   width: 700px;
 }
-
-
-#about-background {
-  background: url("img/mountain_cloud_background.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 
 .bitmoji {
   width: 300px;
