@@ -10,6 +10,10 @@
   height: 100%;
 }
 
+.about-icon {
+  margin-left: 85px;
+  margin-right: 85px;
+}
 #hp-description {
   background-color: white;
   opacity: .70;
