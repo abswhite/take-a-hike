@@ -1,5 +1,3 @@
-![Take a Hike! Logo] (img/Logo-largest.png)
-
 # Take a Hike!
 ## Code Fellows 201 Week 4 Project
 
